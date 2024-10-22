@@ -1,0 +1,2454 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4PN기반 미래유망융합기술 –  💡 </title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./pick_recluster.html" rel="next">
+<link href="./macro_3_meso_42.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="shortcut icon" href="images/favicon.ico">
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./process_4pn.html"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">[부록 1] 4PN 분석 과정 해설</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./"><img src="images/kist_logo.svg" width="100">&nbsp;<img src="images/kion_rainbow.png" width="100"><br>&nbsp;<span class="seagreen_tag">미래유망</span>&nbsp;<span class="violet_tag">융합기술</span><br>&nbsp;<span class="teal_tag">데이터북</span></a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">문서 안내</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">전체 아이템 구조</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text"><span class="forest_tag">지속가능 환경</span></span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">[대영역 1] 소개</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">[세부영역 1] 코로나바이러스</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">[세부영역 2] 수처리-오염제어</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">[세부영역 3] 차세대 에너지 저장</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">[세부영역 4] 정밀의학</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">[세부영역 7] 지속가능 에너지 생산</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">[세부영역 8] 차세대 소재·소자</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">[세부영역 14] 수처리-극한환경대응</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">[세부영역 18] 바이오매스</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_23.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">[세부영역 23] 기능성 식품·바이오소재</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_25.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">[세부영역 25] 나노기술 생체·환경응용</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_26.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">[세부영역 26] 첨단 소재 및 제조</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_29.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">[세부영역 29] 에너지 하베스팅</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_35.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">[세부영역 35] 생체모방 소재</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_37.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">[세부영역 37] 차세대 전자기파 제어</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_1_meso_43.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">[세부영역 43] 전자폐기물 재활용</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text"><span class="steelblue_tag">스마트 인프라</span></span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">[대영역 2] 소개</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">[세부영역 5] 지속가능 건설</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">[세부영역 12] 열관리 및 에너지 전환</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">[세부영역 13] 최적화 시뮬레이션</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">[세부영역 15] 고효율 전력전자시스템</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">[세부영역 16] 대기질 관리</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">[세부영역 19] 자원 개발</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_22.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">[세부영역 22] 시스템 이상 진단</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_28.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">[세부영역 28] 스마트그리드</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_33.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">[세부영역 33] 구조물 모니터링</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_34.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">[세부영역 34] 원격탐사 및 정밀농업</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_38.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">[세부영역 38] 지능형 차량 제어</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_2_meso_39.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">[세부영역 39] AI기반 시계열 데이터 분석</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text"><span class="crimson_tag">디지털 융합</span></span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">31</span>&nbsp; <span class="chapter-title">[대영역 3] 소개</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">32</span>&nbsp; <span class="chapter-title">[세부영역 6] 컴퓨터 비전 및 신경망 가속</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">33</span>&nbsp; <span class="chapter-title">[세부영역 9] 자연어 처리</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">34</span>&nbsp; <span class="chapter-title">[세부영역 10] 드론 등의 지능형 제어</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">35</span>&nbsp; <span class="chapter-title">[세부영역 11] 뇌-컴퓨터 인터페이스</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">36</span>&nbsp; <span class="chapter-title">[세부영역 17] 차세대 사이버 보안</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_20.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">37</span>&nbsp; <span class="chapter-title">[세부영역 20] 고성능 영상처리 및 분석</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">38</span>&nbsp; <span class="chapter-title">[세부영역 21] 디지털시대 사회·경제 혁신</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_24.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">39</span>&nbsp; <span class="chapter-title">[세부영역 24] 지능형 센싱·인식</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_27.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">40</span>&nbsp; <span class="chapter-title">[세부영역 27] 지능형 플랫폼·분석</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_30.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">41</span>&nbsp; <span class="chapter-title">[세부영역 30] 지능형 교통</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_31.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">42</span>&nbsp; <span class="chapter-title">[세부영역 31] 열관리 및 에너지 젼환</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_32.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">43</span>&nbsp; <span class="chapter-title">[세부영역 32] 디지털 보안</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_36.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">44</span>&nbsp; <span class="chapter-title">[세부영역 36] 지능형 로봇</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_40.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">45</span>&nbsp; <span class="chapter-title">[세부영역 40] 실감형 메타버스</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_41.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">46</span>&nbsp; <span class="chapter-title">[세부영역 41] 스마트 건설 및 해양 안전</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./macro_3_meso_42.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">[세부영역 42] AI기반 영상 분석 및 진단</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./process_4pn.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">[부록 1] 4PN 분석 과정 해설</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pick_recluster.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">[부록 2] 선별 아이템의 유형화</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./kr_diversity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">50</span>&nbsp; <span class="chapter-title">[부록 3] 클러스터별 한국의 융합성 측정</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./report_generate_4pn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">51</span>&nbsp; <span class="chapter-title">[부록 4] 4PN 분석에서 LLM 적용</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./stat_total.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">52</span>&nbsp; <span class="chapter-title">[부록 5] 활용 데이터 총괄 통계</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./update_list.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">업데이트 내역</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">참고문헌</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="4">
+    <h2 id="toc-title">세부 목차</h2>
+   
+  <ul>
+  <li><a href="#pn-분석-개요" id="toc-pn-분석-개요" class="nav-link active" data-scroll-target="#pn-분석-개요"><span class="header-section-number">48.1</span> 4PN 분석 개요</a>
+  <ul>
+  <li><a href="#등장-배경과-개념" id="toc-등장-배경과-개념" class="nav-link" data-scroll-target="#등장-배경과-개념"><span class="header-section-number">48.1.1</span> 등장 배경과 개념</a></li>
+  <li><a href="#pn-분석의-방향성" id="toc-pn-분석의-방향성" class="nav-link" data-scroll-target="#pn-분석의-방향성"><span class="header-section-number">48.1.2</span> 4PN 분석의 방향성</a></li>
+  </ul></li>
+  <li><a href="#pn-분석과정의-구성" id="toc-pn-분석과정의-구성" class="nav-link" data-scroll-target="#pn-분석과정의-구성"><span class="header-section-number">48.2</span> <span class="royal_tag">4PN</span> 분석과정의 구성</a>
+  <ul>
+  <li><a href="#pn의-3단계-분석" id="toc-pn의-3단계-분석" class="nav-link" data-scroll-target="#pn의-3단계-분석"><span class="header-section-number">48.2.1</span> 4PN의 3단계 분석</a></li>
+  <li><a href="#데이터-연계와-지표의-구성" id="toc-데이터-연계와-지표의-구성" class="nav-link" data-scroll-target="#데이터-연계와-지표의-구성"><span class="header-section-number">48.2.2</span> 데이터 연계와 지표의 구성</a></li>
+  <li><a href="#지표-체계-구성과-점수-배분" id="toc-지표-체계-구성과-점수-배분" class="nav-link" data-scroll-target="#지표-체계-구성과-점수-배분"><span class="header-section-number">48.2.3</span> 지표 체계 구성과 점수 배분</a></li>
+  </ul></li>
+  <li><a href="#지표-해설" id="toc-지표-해설" class="nav-link" data-scroll-target="#지표-해설"><span class="header-section-number">48.3</span> 지표 해설</a>
+  <ul>
+  <li><a href="#성장성growth" id="toc-성장성growth" class="nav-link" data-scroll-target="#성장성growth"><span class="header-section-number">48.3.1</span> 성장성(Growth)</a>
+  <ul class="collapse">
+  <li><a href="#sec-deep_indi" id="toc-sec-deep_indi" class="nav-link" data-scroll-target="#sec-deep_indi"><span class="header-section-number">48.3.1.1</span> 딥러닝기반 예측 모형</a></li>
+  <li><a href="#급부상성emergence-score" id="toc-급부상성emergence-score" class="nav-link" data-scroll-target="#급부상성emergence-score"><span class="header-section-number">48.3.1.2</span> 급부상성(Emergence Score)</a></li>
+  <li><a href="#신규성" id="toc-신규성" class="nav-link" data-scroll-target="#신규성"><span class="header-section-number">48.3.1.3</span> 신규성</a></li>
+  <li><a href="#장기추세" id="toc-장기추세" class="nav-link" data-scroll-target="#장기추세"><span class="header-section-number">48.3.1.4</span> 장기추세</a></li>
+  </ul></li>
+  <li><a href="#융합성diversity" id="toc-융합성diversity" class="nav-link" data-scroll-target="#융합성diversity"><span class="header-section-number">48.3.2</span> 융합성(Diversity)</a>
+  <ul class="collapse">
+  <li><a href="#sec-rs_diversity" id="toc-sec-rs_diversity" class="nav-link" data-scroll-target="#sec-rs_diversity"><span class="header-section-number">48.3.2.1</span> Rao-Stirling 지수</a></li>
+  <li><a href="#매개-중심성" id="toc-매개-중심성" class="nav-link" data-scroll-target="#매개-중심성"><span class="header-section-number">48.3.2.2</span> 매개 중심성</a></li>
+  </ul></li>
+  <li><a href="#영향력impact" id="toc-영향력impact" class="nav-link" data-scroll-target="#영향력impact"><span class="header-section-number">48.3.3</span> 영향력(Impact)</a>
+  <ul class="collapse">
+  <li><a href="#상위-10-엑셀런스" id="toc-상위-10-엑셀런스" class="nav-link" data-scroll-target="#상위-10-엑셀런스"><span class="header-section-number">48.3.3.1</span> 상위 10% 엑셀런스</a></li>
+  </ul></li>
+  <li><a href="#산업-연계성industrial-linkage" id="toc-산업-연계성industrial-linkage" class="nav-link" data-scroll-target="#산업-연계성industrial-linkage"><span class="header-section-number">48.3.4</span> 산업 연계성(Industrial linkage)</a>
+  <ul class="collapse">
+  <li><a href="#산업-활용성" id="toc-산업-활용성" class="nav-link" data-scroll-target="#산업-활용성"><span class="header-section-number">48.3.4.1</span> 산업 활용성</a></li>
+  <li><a href="#산업-기반성" id="toc-산업-기반성" class="nav-link" data-scroll-target="#산업-기반성"><span class="header-section-number">48.3.4.2</span> 산업 기반성</a></li>
+  </ul></li>
+  <li><a href="#투자-기반성fund-intensity" id="toc-투자-기반성fund-intensity" class="nav-link" data-scroll-target="#투자-기반성fund-intensity"><span class="header-section-number">48.3.5</span> 투자 기반성(Fund Intensity)</a>
+  <ul class="collapse">
+  <li><a href="#투자-규모" id="toc-투자-규모" class="nav-link" data-scroll-target="#투자-규모"><span class="header-section-number">48.3.5.1</span> 투자 규모</a></li>
+  <li><a href="#투자-활성도" id="toc-투자-활성도" class="nav-link" data-scroll-target="#투자-활성도"><span class="header-section-number">48.3.5.2</span> 투자 활성도</a></li>
+  </ul></li>
+  <li><a href="#한국-연구기반수준koreas-reseach-capacity" id="toc-한국-연구기반수준koreas-reseach-capacity" class="nav-link" data-scroll-target="#한국-연구기반수준koreas-reseach-capacity"><span class="header-section-number">48.3.6</span> 한국 연구기반/수준(Korea’s reseach capacity)</a>
+  <ul class="collapse">
+  <li><a href="#전체-점유율" id="toc-전체-점유율" class="nav-link" data-scroll-target="#전체-점유율"><span class="header-section-number">48.3.6.1</span> 전체 점유율</a></li>
+  <li><a href="#sec-excel_indi" id="toc-sec-excel_indi" class="nav-link" data-scroll-target="#sec-excel_indi"><span class="header-section-number">48.3.6.2</span> 엑셀런스</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">48</span>&nbsp; <span class="chapter-title">[부록 1] 4PN 분석 과정 해설</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="pn-분석-개요" class="level2 page-columns page-full" data-number="48.1">
+<h2 data-number="48.1" class="anchored" data-anchor-id="pn-분석-개요"><span class="header-section-number">48.1</span> 4PN 분석 개요</h2>
+<section id="등장-배경과-개념" class="level3" data-number="48.1.1">
+<h3 data-number="48.1.1" class="anchored" data-anchor-id="등장-배경과-개념"><span class="header-section-number">48.1.1</span> 등장 배경과 개념</h3>
+<p><br></p>
+<ul>
+<li><span class="royal_tag">4PN 분석</span>은 한국과학기술연구원(KIST) 미래융합전략센터(FCSC)에서 ‘융합기술의 전방위적 현황 분석’을 위해 제안한 개념<span class="citation" data-cites="kist_2013">(<a href="references.html#ref-kist_2013" role="doc-biblioref">미래융합전략센터 2013</a>)</span>
+<ul>
+<li>융합기술이 갖는 다양한 영역 간의 결합, 광범위한 파급효과 등의 특성을 포착하기 위해 관련한 이종 데이터들의 연계 분석을 강조</li>
+</ul></li>
+</ul>
+<div class="tbl_indented">
+<div class="my_callout3 callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>4PN 분석의 가장 이상적인 최종 지향점은 논문/특허/산업/정책/수요 각 항목의 정량화/정규화된 분석결과를 비교하여 분석 대상의 기술 역량과 환경을 평가하는 방법모델 <span class="citation" data-cites="kist_2013">(<a href="references.html#ref-kist_2013" role="doc-biblioref">미래융합전략센터 2013, 59</a>)</span></p>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li><span class="royal_tag">제4차 융합연구개발 활성화 기본계획</span><span class="citation" data-cites="convergence_4th_plan">(<a href="references.html#ref-convergence_4th_plan" role="doc-biblioref">국가과학기술자문회의 2023</a>)</span>은 4PN 분석을 <a href="#fig-4pn_scheme_4th" class="quarto-xref">그림&nbsp;<span>48.1</span></a> 도해로 제시하였음.
+<ul>
+<li>이와 함께 4PN 분석 방법론에 바탕하여 ‘미래유망 융합기술’에 대한 현황을 한눈에 파악할 수 있는 분석결과를 제공하는 것을 주요 계획으로 설정하였음.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-4pn_scheme_4th" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-4pn_scheme_4th-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="images/4pn_scheme_4th_plan.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="그림&nbsp;48.1: 4PN 분석의 구성 개념도"><img src="images/4pn_scheme_4th_plan.png" class="img-fluid figure-img" width="1232"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4pn_scheme_4th-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;48.1: 4PN 분석의 구성 개념도
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="tbl_indented">
+<div class="my_callout3 callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>기존 3P(논문·특허·산업) 분석과 정책(Policy) 및 사회적 수요(Needs)를 연계하는 4PN 방법론을 활용하여 [미래유망 융합기술 분석 결과]를 제공<span class="citation" data-cites="convergence_4th_plan">(<a href="references.html#ref-convergence_4th_plan" role="doc-biblioref">국가과학기술자문회의 2023, 34</a>)</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="pn-분석의-방향성" class="level3 page-columns page-full" data-number="48.1.2">
+<h3 data-number="48.1.2" class="anchored" data-anchor-id="pn-분석의-방향성"><span class="header-section-number">48.1.2</span> 4PN 분석의 방향성</h3>
+<ul>
+<li>4PN 분석은 다양한 데이터의 연계 활용을 강조하는 관점이지만, <a href="#fig-4pn_top_bottom" class="quarto-xref">그림&nbsp;<span>48.2</span></a> 와 같이 분석의 주요 목적이 1) 특정한 융합기술을 분석대상이 확정된 상태에서 이에 대한 세부 분석을 수행하려는 것인지(하향식), 아니면 2) 여러 후보 기술들 중에서 ‘유망 융합기술’을 선별 내지는 발굴하는 것인지(상향식)에 따라 전체 분석 과정에 상당한 차이가 발생함.</li>
+</ul>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-4pn_top_bottom" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-4pn_top_bottom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="images/4pn_top_bottom_compare.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-2" title="그림&nbsp;48.2: 4PN 분석의 하향식, 상향식 과정 비교"><img src="images/4pn_top_bottom_compare.png" class="img-fluid figure-img column-page-inset-right" width="1904"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4pn_top_bottom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;48.2: 4PN 분석의 하향식, 상향식 과정 비교
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><span class="royal_tag">하향식</span>은 고찰하려는 특정한 기술에 대해 주요 데이터(논문, 특허 등)별로 데이터의 특성과 기술의 내용을 고려한 검색전략을 수립, 적용<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>하여 분석 영역을 설정하고 각 영역별로 분석을 진행한 뒤에 분석 결과들을 결합하는 방식으로 진행됨.</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;해당 기술에 대응하는 문헌들의 집합을 특정 데이터(베이스)에서 구성하기 위한 검색식(query) 작성 작업이 전체 분석 과정에서 차지하는 비중이 높음.</p></div></div><ul>
+<li><span class="royal_tag">상향식</span>은 기술을 발굴하고자 하는 전체 후보기술 집합<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>이 확보된 상태에서 4PN 관련 데이터들을 연계분석하고 이를 종합하여 ‘유망’한 기술을 선별하는 방식을 취하게 됨.</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;본 분석에서 후보기술들은 <a href="https://www.leidenranking.com/information/fields">Leiden 클러스터</a>에 대응하며 따라서 분석의 ‘주 축’을 논문 데이터로 설정하게 됨. Leiden 클러스터는 네덜란드 Leiden 대학의 <a href="https://www.cwts.nl/">CWTS</a> 연구소에서 해마다 발표하는 글로벌 대학 연구수준 평가인 <a href="https://leidenranking.com">Leiden Ranking</a>과 함께 공개됨. Leiden 클러스터는 Web of Science 데이터베이스의 전체 학문분야 문헌을 대상으로 확보할 수 있는 공개가능한 전세계 유일한 클러스터링 정보임. Leiden Ranking을 통해 십여 년 간에 걸친 실제 분석 현장 적용 경험, 대규모 문헌데이터에 대한 최고수준의 방법론 적용<span class="citation" data-cites="traag_louvain_2019 waltman_principled_2020">(<a href="references.html#ref-traag_louvain_2019" role="doc-biblioref">Traag, Waltman, and Eck 2019</a>; <a href="references.html#ref-waltman_principled_2020" role="doc-biblioref">Waltman et al. 2020</a>)</span> 등 많은 장점을 갖고 있음.</p></div></div><ul>
+<li>물론 분석의 맥락에 따라 하향식, 상향식 방식이 서로 상호 결합되는 형태들이 다양하게 존재할 수 있음. 예를 들어 1) 상향식으로 최종 선별된 융합기술에 대해서 더 자세한 분석을 위해 논문, 특허 등의 데이터 별로 새롭게 영역을 재구성하여 하향식 분석을 새롭게 추가하거나, 2) 하향식 방식을 적용할 때 데이터별 종속 영역을 구성하지 않고 상향식처럼 논문만을 대상으로 영역을 구성하고 다른 데이터들 간의 연계분석을 추진하는 방식을 취할 수도 있음. 또한 3) 하향식에서 데이터별로 구성한 문헌집합에 대한 개별 분석을 진행한 뒤에 데이터 간의 연계분석을 추가할 수도 있음.</li>
+</ul>
+</section>
+</section>
+<section id="pn-분석과정의-구성" class="level2 page-columns page-full" data-number="48.2">
+<h2 data-number="48.2" class="anchored" data-anchor-id="pn-분석과정의-구성"><span class="header-section-number">48.2</span> <span class="royal_tag">4PN</span> 분석과정의 구성</h2>
+<ul>
+<li>본 분석은 ‘상향식’ 관점의 4PN을 적용하였으며, 글로벌 수준의 데이터 간 연계분석을 실질적으로 수행하기 위해 다음과 같은 사항들을 전략적으로 선택하였음. <br>
+<ul>
+<li><span class="royal_tag">후보 아이템 대상</span>: 앞서 언급한 Leiden 클러스터를 선택하였음. 전 학문분야를 망라한 글로벌 주요 문헌들에 대하여 장기간에 걸친 세부 연구영역 정보를 확인할 수 있게 해주는 사실상 유일한 ‘공개’ 데이터임<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</li>
+<li><span class="royal_tag">주축 데이터</span>: CWTS에서 제공하는 Leiden 클러스터 정보는 클러스터 번호와 Web of Science 데이터의 문헌 고유번호 매칭데이터에 불과함. 클러스터의 다양한 속성을 파악할 수 있는 서지정보는 KISTI에서 도입하여 활용 중인 Clarivate사의 Web of Science XML Raw 데이터<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>에서 추출하여 진행</li>
+<li><span class="royal_tag">특허 연계 데이터</span>: 논문 데이터를 축으로 특허 데이터의 연계를 위한 전방 인용(forward citation)<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> 매칭은 <a href="https://relianceonscience.org/">Reliance on Science</a> 데이터를 활용하였으며, 후방 인용 매칭은 Web of Science 인용데이터에서 특허 정보를 추출하고 유럽특허청의 글로벌특허DB <a href="https://www.epo.org/en/searching-for-patents/business/patstat">PATSTAT</a>와 연계하여 진행</li>
+<li><span class="royal_tag">과제 연계 데이터</span>: 투자현황을 파악하기 위한 과제 연계는 한국의 국가과학기술지식정보서비스, 즉 <a href="https://www.ntis.go.kr">NTIS</a> 과제 정보와 성과 정보를 활용</li>
+<li><strong>기타 데이터</strong>: 위 <strong>3P</strong> 정보 이외에 정책(Policy)과 수요(Needs)의 연계는 본 분석의 범위에서는 제외</li>
+</ul></li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn3"><p><sup>3</sup>&nbsp;Leiden의 클러스터링 방법론을 적용한 Clarivate 사의 <a href="https://incites.help.clarivate.com/Content/Research-Areas/citation-topics.htm">Citation Topics</a> 분류서비스(유료)도 존재함. 그러나 Citation Topics의 하위 영역(micro)의 갯수는 2024년 기준 2,449개로 Leiden 클러스터의 4,215개에 비해 적음. 가능한 많은 연구 아이템들을 탐색하는 것이 중요한 본 분석에서는 Citation Topics에 비해 Leiden 클러스터가 더 적합함.</p></div><div id="fn4"><p><sup>4</sup>&nbsp;KISTI 보유 데이터는 Web of Science 데이터베이스에 포함되는 전체 기간, 전체 에디션의 문헌 정보가 모두 수록됨. 이런 장점을 활용하여 Leiden 클러스터의 ‘확산(diffusion)’ 또는 영향력(impact) 관련 지표 측정시 Leiden 클러스터의 범위인 Web of Science의 3대 주 에디션(SCIE, SSCI, AHCI) 외에도 ESCI, 컨퍼런스, 북 에디션 등이 포함된 확장 영역을 활용하였음.</p></div><div id="fn5"><p><sup>5</sup>&nbsp;클러스터 논문 기준으로 ‘전방(forward)’ 인용은 특허가 클러스터에 속한 논문을 인용하는 경우를 가리키며, 반대로 ␀후방(backward)’ 인용은 논문의 참고문헌에 특허를 단 경우를 의미함. 전방 인용 정보는 <span class="citation" data-cites="marx_reliance_2020">Marx and Fuegi (<a href="references.html#ref-marx_reliance_2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="marx_reliance_2022">Marx and Fuegi (<a href="references.html#ref-marx_reliance_2022" role="doc-biblioref">2022</a>)</span> 연구그룹의 노력으로 높은 품질의 정보를 활용할 수 있으나, 후방 인용은 Web of Science 참고문헌의 특허 정보가 표준화 되어 있지 않아, 상당한 데이터 정제 작업이 수반됨.</p></div></div><section id="pn의-3단계-분석" class="level3 page-columns page-full" data-number="48.2.1">
+<h3 data-number="48.2.1" class="anchored" data-anchor-id="pn의-3단계-분석"><span class="header-section-number">48.2.1</span> 4PN의 3단계 분석</h3>
+<ul>
+<li>본 4PN 분석은 <a href="#fig-4pn_process_compact" class="quarto-xref">그림&nbsp;<span>48.3</span></a> 에서와 같이 크게 3개의 단계로 구분할 수 있음. 첫 번째는 전체 클러스터들을 대상으로 주요 계량지표 산출을 위한 데이터 구축 및 분석 작업이고, 두 번째는 계산된 지표결과를 종합하여 클러스터(아이템)를 선별하는 작업, 세 번째는 도출한 아이템의 관련 지표값을 정리하고 간략한 기술적 내용에 대한 리포팅을 하는 작업임.</li>
+</ul>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-4pn_process_compact" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-4pn_process_compact-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="images/4pn_process_compact2.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-3" title="그림&nbsp;48.3: 4PN 분석의 주요 단계"><img src="images/4pn_process_compact2.png" class="img-fluid figure-img column-page-inset-right" width="1854"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4pn_process_compact-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;48.3: 4PN 분석의 주요 단계
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>본 부록 절에서는 1단계를 중심으로 정리함. 2단계 지표의 종합과 아이템 선별 작업, 3단계 아이템 데이터의 최신 데이터의 보강을 비롯하여 거대언어모델을 이용한 리포트 생성 등의 내용은 별도로 [부록4]에서 정리함.</li>
+</ul>
+</section>
+<section id="데이터-연계와-지표의-구성" class="level3 page-columns page-full" data-number="48.2.2">
+<h3 data-number="48.2.2" class="anchored" data-anchor-id="데이터-연계와-지표의-구성"><span class="header-section-number">48.2.2</span> 데이터 연계와 지표의 구성</h3>
+<ul>
+<li><a href="#fig-4pn_indi_scheme" class="quarto-xref">그림&nbsp;<span>48.4</span></a> 에서는 Leiden 클러스터 논문 데이터를 주축으로 특허 및 과제 데이터 연계를 포함하여 클러스터별로 동적 특성(dynamics)을 파악하기 위해 구성한 계량 지표들을 유형화하였음.</li>
+</ul>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-4pn_indi_scheme" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-4pn_indi_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="images/4pn_indi_scheme2.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-4" title="그림&nbsp;48.4: 4PN 분석의 계량지표 구성"><img src="images/4pn_indi_scheme2.png" class="img-fluid figure-img column-page-inset-right" width="1732"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-4pn_indi_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;48.4: 4PN 분석의 계량지표 구성
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>‘유망기술(emerging technology)’을 구성하는 속성들에 대해서는 여러 연구자들의 노력<span class="citation" data-cites="cozzens_emerging_2010 avila-robinson_conceptualization_2011 boyack_characterizing_2012 rotolo_what_2015">(<a href="references.html#ref-cozzens_emerging_2010" role="doc-biblioref">Cozzens et al. 2010</a>; <a href="references.html#ref-avila-robinson_conceptualization_2011" role="doc-biblioref">Avila-Robinson and Miyazaki 2011</a>; <a href="references.html#ref-boyack_characterizing_2012" role="doc-biblioref">Boyack et al. 2012</a>; <a href="references.html#ref-rotolo_what_2015" role="doc-biblioref">Rotolo, Hicks, and Martin 2015</a>)</span> 으로 ‘급속한 성장’, ‘상당한 파급력’, ‘신규성’, ‘지속성/정합성’ 등의 개념들로 정리</p>
+<ul>
+<li>그러나 이러한 속성들을 기술에 관련한 문헌 데이터로부터 실제로 어떻게 측정할 수 있을 것인지에 대해 여전히 표준화 모형은 존재하지 않음<span class="citation" data-cites="shibata_detecting_2008 guo_mixed-indicators_2011 wang_bibliometric_2018 zamani_developing_2022">(<a href="references.html#ref-shibata_detecting_2008" role="doc-biblioref">Shibata et al. 2008</a>; <a href="references.html#ref-guo_mixed-indicators_2011" role="doc-biblioref">Guo, Weingart, and Börner 2011</a>; <a href="references.html#ref-wang_bibliometric_2018" role="doc-biblioref">Q. Wang 2018</a>; <a href="references.html#ref-zamani_developing_2022" role="doc-biblioref">Zamani et al. 2022</a>)</span> .</li>
+</ul></li>
+<li><p>그럼에도 불구하고 본 분석은 유망기술을 포착하기 위한 주요 속성을 <a href="#fig-4pn_indi_scheme" class="quarto-xref">그림&nbsp;<span>48.4</span></a> 에서처럼 성장성 등의 6개 주요 항목으로 구분하고 클러스터 규모 등 특성에 따른 왜곡을 최소화하고 객관적 비교를 가능케 하는 지표들<span class="citation" data-cites="hicks_leiden_2015 waltman_review_2016 van_raan_measuring_2019">(<a href="references.html#ref-hicks_leiden_2015" role="doc-biblioref">Hicks et al. 2015</a>; <a href="references.html#ref-waltman_review_2016" role="doc-biblioref">Waltman 2016</a>; <a href="references.html#ref-van_raan_measuring_2019" role="doc-biblioref">Raan 2019</a>)</span> 을 중심으로 구성하였음.</p></li>
+</ul>
+</section>
+<section id="지표-체계-구성과-점수-배분" class="level3" data-number="48.2.3">
+<h3 data-number="48.2.3" class="anchored" data-anchor-id="지표-체계-구성과-점수-배분"><span class="header-section-number">48.2.3</span> 지표 체계 구성과 점수 배분</h3>
+<ul>
+<li><a href="#tbl-4pn_indi_score_scheme" class="quarto-xref">표&nbsp;<span>48.1</span></a> 에서는 본 <strong>4PN</strong> 분석에서 아이템 선별에 활용한 계량지표와 각 지표별 최대 점수를 정리</li>
+</ul>
+<div class="cell plain">
+<div id="tbl-4pn_indi_score_scheme" class="cell plain quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-4pn_indi_score_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+표&nbsp;48.1: 4PN 지표별 점수 구성체계
+</figcaption>
+<div aria-describedby="tbl-4pn_indi_score_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="lksrkooybh" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#lksrkooybh table {
+  font-family: 'Noto Sans KR', system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#lksrkooybh thead, #lksrkooybh tbody, #lksrkooybh tfoot, #lksrkooybh tr, #lksrkooybh td, #lksrkooybh th {
+  border-style: none;
+}
+
+#lksrkooybh p {
+  margin: 0;
+  padding: 0;
+}
+
+#lksrkooybh .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FCFEFE;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#lksrkooybh .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FCFEFE;
+  border-bottom-width: 0;
+}
+
+#lksrkooybh .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FCFEFE;
+  border-top-width: 0;
+}
+
+#lksrkooybh .gt_heading {
+  background-color: #FCFEFE;
+  text-align: center;
+  border-bottom-color: #FCFEFE;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_col_heading {
+  color: #333333;
+  background-color: #FCFEFE;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#lksrkooybh .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FCFEFE;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#lksrkooybh .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#lksrkooybh .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#lksrkooybh .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#lksrkooybh .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#lksrkooybh .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FCFEFE;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#lksrkooybh .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FCFEFE;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#lksrkooybh .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#lksrkooybh .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#lksrkooybh .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#lksrkooybh .gt_stub {
+  color: #333333;
+  background-color: #FCFEFE;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lksrkooybh .gt_stub_row_group {
+  color: #333333;
+  background-color: #FCFEFE;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#lksrkooybh .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#lksrkooybh .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#lksrkooybh .gt_summary_row {
+  color: #333333;
+  background-color: #FCFEFE;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lksrkooybh .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#lksrkooybh .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FCFEFE;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lksrkooybh .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#lksrkooybh .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_footnotes {
+  color: #333333;
+  background-color: #FCFEFE;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lksrkooybh .gt_sourcenotes {
+  color: #333333;
+  background-color: #FCFEFE;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#lksrkooybh .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#lksrkooybh .gt_left {
+  text-align: left;
+}
+
+#lksrkooybh .gt_center {
+  text-align: center;
+}
+
+#lksrkooybh .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#lksrkooybh .gt_font_normal {
+  font-weight: normal;
+}
+
+#lksrkooybh .gt_font_bold {
+  font-weight: bold;
+}
+
+#lksrkooybh .gt_font_italic {
+  font-style: italic;
+}
+
+#lksrkooybh .gt_super {
+  font-size: 65%;
+}
+
+#lksrkooybh .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#lksrkooybh .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#lksrkooybh .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#lksrkooybh .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#lksrkooybh .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#lksrkooybh .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#lksrkooybh .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#lksrkooybh .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#lksrkooybh div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell plain caption-top table" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th id="a계량지표" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="background-color: #E6E6FA; font-weight: bold" scope="col">계량지표</th>
+<th id="a지표별-최고-점수" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" style="background-color: #E6E6FA; font-weight: bold" scope="col">지표별 최고 점수</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd gt_group_heading_row">
+<td colspan="2" id="<span data-qmd-base64=&quot;PGltZyBzcmM9J2ltYWdlcy9pY29uX2R5bmFtaWNzLnN2Zycgc3R5bGU9J2hlaWdodDoyNXB4Oyc+wqDCoMKg64uk7J2064K066+57IqkICg0NSk=&quot;><span class='gt_from_md'><img src='images/icon_dynamics.svg' style='height:25px;'>&nbsp;&nbsp;&nbsp;다이내믹스 (45)</span></span>" class="gt_group_heading" data-quarto-table-cell-role="th" style="background-color: #F0F8FF; font-weight: bold" scope="colgroup"><img src="images/icon_dynamics.svg" style="height:25px;" class="figure-img">&nbsp;&nbsp;&nbsp;다이내믹스 (45)</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  계량지표">딥러닝(MLP) 기반 성장성 확률<br><span style="color: SlateGray;">deep_mlp_prob</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  지표별 최고 점수">10</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  계량지표">딥러닝(attention) 기반 성장성 확률<br><span style="color: SlateGray;">deep_attention_prob</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  지표별 최고 점수">10</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  계량지표">급부상성 점수(규모)<br><span style="color: SlateGray;">emergence_score</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  계량지표">급부상성 점수(확산)<br><span style="color: SlateGray;">emergence_diffu_score</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  지표별 최고 점수">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  계량지표">최신성(가중평균년도)<br><span style="color: SlateGray;">avg_pubyear_06_21</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  계량지표">연평균복합성장률(규모)<br><span style="color: SlateGray;">cagr_pub</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  지표별 최고 점수">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  계량지표">연평균복합성장률(확산)<br><span style="color: SlateGray;">cagr_diffu</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;다이내믹스 (45)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd gt_group_heading_row">
+<td colspan="2" id="<span data-qmd-base64=&quot;PGltZyBzcmM9J2ltYWdlcy9pY29uX2RpdmVyc2l0eS5zdmcnIHN0eWxlPSdoZWlnaHQ6MjVweDsnPsKgwqDCoOycte2VqeyEsSAoMTUp&quot;><span class='gt_from_md'><img src='images/icon_diversity.svg' style='height:25px;'>&nbsp;&nbsp;&nbsp;융합성 (15)</span></span>" class="gt_group_heading" data-quarto-table-cell-role="th" style="background-color: #F0F8FF; font-weight: bold" scope="colgroup"><img src="images/icon_diversity.svg" style="height:25px;" class="figure-img">&nbsp;&nbsp;&nbsp;융합성 (15)</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;융합성 (15)  계량지표">Rao-Stirling 다양성 지수(WoS분류)<br><span style="color: SlateGray;">rs_div_wcate_17_21</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;융합성 (15)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;융합성 (15)  계량지표">Rao-Stirling 다양성 지수(Citation Topics)<br><span style="color: SlateGray;">rs_div_ct_17_21</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;융합성 (15)  지표별 최고 점수">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;융합성 (15)  계량지표">클러스터 지식흐름의 사이중앙성<br><span style="color: SlateGray;">centrality_btwn</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;융합성 (15)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd gt_group_heading_row">
+<td colspan="2" id="<span data-qmd-base64=&quot;PGltZyBzcmM9J2ltYWdlcy9pY29uX2ltcGFjdC5zdmcnIHN0eWxlPSdoZWlnaHQ6MjVweDsnPsKgwqDCoOyYge2WpeugpSAoMTAp&quot;><span class='gt_from_md'><img src='images/icon_impact.svg' style='height:25px;'>&nbsp;&nbsp;&nbsp;영향력 (10)</span></span>" class="gt_group_heading" data-quarto-table-cell-role="th" style="background-color: #F0F8FF; font-weight: bold" scope="colgroup"><img src="images/icon_impact.svg" style="height:25px;" class="figure-img">&nbsp;&nbsp;&nbsp;영향력 (10)</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;영향력 (10)  계량지표">클러스터 단위 엑셀런스(2016-2018년)<br><span style="color: SlateGray;">excellence_pp10_1618</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;영향력 (10)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;영향력 (10)  계량지표">클러스터 단위 엑셀런스(2019-2021년)<br><span style="color: SlateGray;">excellence_pp10_1921</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;영향력 (10)  지표별 최고 점수">5</td>
+</tr>
+<tr class="even gt_group_heading_row">
+<td colspan="2" id="<span data-qmd-base64=&quot;PGltZyBzcmM9J2ltYWdlcy9pY29uX2luZHVzdHJ5LnN2Zycgc3R5bGU9J2hlaWdodDoyNXB4Oyc+wqDCoMKg7IKw7JeF7Jew6rOEICgyMCk=&quot;><span class='gt_from_md'><img src='images/icon_industry.svg' style='height:25px;'>&nbsp;&nbsp;&nbsp;산업연계 (20)</span></span>" class="gt_group_heading" data-quarto-table-cell-role="th" style="background-color: #F0F8FF; font-weight: bold" scope="colgroup"><img src="images/icon_industry.svg" style="height:25px;" class="figure-img">&nbsp;&nbsp;&nbsp;산업연계 (20)</td>
+</tr>
+<tr class="odd gt_row_group_first">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;산업연계 (20)  계량지표">산업활용성(2006-2021년)<br><span style="color: SlateGray;">prop_cited_by_pat_06_21</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;산업연계 (20)  지표별 최고 점수">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;산업연계 (20)  계량지표">산업활용성(2017-2021년)<br><span style="color: SlateGray;">prop_cited_by_pat_17_21</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;산업연계 (20)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;산업연계 (20)  계량지표">산업기반성(2006-2021년)<br><span style="color: SlateGray;">prop_citting_pat_06_21</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;산업연계 (20)  지표별 최고 점수">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;산업연계 (20)  계량지표">산업기반성(2017-2021년)<br><span style="color: SlateGray;">prop_citting_pat_17_21</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;산업연계 (20)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd gt_group_heading_row">
+<td colspan="2" id="<span data-qmd-base64=&quot;PGltZyBzcmM9J2ltYWdlcy9pY29uX2Z1bmQuc3ZnJyBzdHlsZT0naGVpZ2h0OjI1cHg7Jz7CoMKgwqDtiKzsnpDquLDrsJggKDEwKQ==&quot;><span class='gt_from_md'><img src='images/icon_fund.svg' style='height:25px;'>&nbsp;&nbsp;&nbsp;투자기반 (10)</span></span>" class="gt_group_heading" data-quarto-table-cell-role="th" style="background-color: #F0F8FF; font-weight: bold" scope="colgroup"><img src="images/icon_fund.svg" style="height:25px;" class="figure-img">&nbsp;&nbsp;&nbsp;투자기반 (10)</td>
+</tr>
+<tr class="even gt_row_group_first">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;투자기반 (10)  계량지표">한국 투자규모(2017-2021년)<br><span style="color: SlateGray;">fund_total_bwon</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;투자기반 (10)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;투자기반 (10)  계량지표">한국 투자 과제수(2017-2021년)<br><span style="color: SlateGray;">n_projects</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;투자기반 (10)  지표별 최고 점수">5</td>
+</tr>
+<tr class="even gt_group_heading_row">
+<td colspan="2" id="<span data-qmd-base64=&quot;PGltZyBzcmM9J2ltYWdlcy9pY29uX2tyLnN2Zycgc3R5bGU9J2hlaWdodDoyNXB4Oyc+wqDCoMKg7ZWc6rWt7IiY7KSAICgyMCk=&quot;><span class='gt_from_md'><img src='images/icon_kr.svg' style='height:25px;'>&nbsp;&nbsp;&nbsp;한국수준 (20)</span></span>" class="gt_group_heading" data-quarto-table-cell-role="th" style="background-color: #F0F8FF; font-weight: bold" scope="colgroup"><img src="images/icon_kr.svg" style="height:25px;" class="figure-img">&nbsp;&nbsp;&nbsp;한국수준 (20)</td>
+</tr>
+<tr class="odd gt_row_group_first">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;한국수준 (20)  계량지표">한국 점유율(2006-2021년)<br><span style="color: SlateGray;">kr_share_06_21</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;한국수준 (20)  지표별 최고 점수">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;한국수준 (20)  계량지표">한국 점유율(2017-2021년)<br><span style="color: SlateGray;">kr_share_17_21</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;한국수준 (20)  지표별 최고 점수">5</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;한국수준 (20)  계량지표">한국 엑셀런스(2016-2018년)<br><span style="color: SlateGray;">kr_excel_pp10_1618</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;한국수준 (20)  지표별 최고 점수">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="&nbsp;&nbsp;&nbsp;한국수준 (20)  계량지표">한국 엑셀런스(2019-2021년)<br><span style="color: SlateGray;">kr_excel_pp10_1921</span></td>
+<td class="gt_row gt_right" headers="&nbsp;&nbsp;&nbsp;한국수준 (20)  지표별 최고 점수">5</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+</section>
+<section id="지표-해설" class="level2 page-columns page-full" data-number="48.3">
+<h2 data-number="48.3" class="anchored" data-anchor-id="지표-해설"><span class="header-section-number">48.3</span> 지표 해설</h2>
+<section id="성장성growth" class="level3 page-columns page-full" data-number="48.3.1">
+<h3 data-number="48.3.1" class="anchored" data-anchor-id="성장성growth"><span class="header-section-number">48.3.1</span> 성장성(Growth)</h3>
+<ul>
+<li>성장성 항목 지표는 크게 1) KISTI에서 개발한 딥러닝 기반 예측 모형을 활용한 중장기 고성장성 예측결과 2) 클러스터의 규모의 성장 또는 확산 추세와 관련한 시계열 데이터를 이용한 성장 패턴과 관련한 지표로 구분할 수 있음.</li>
+</ul>
+<section id="sec-deep_indi" class="level4 page-columns page-full" data-number="48.3.1.1">
+<h4 data-number="48.3.1.1" class="anchored" data-anchor-id="sec-deep_indi"><span class="header-section-number">48.3.1.1</span> 딥러닝기반 예측 모형</h4>
+<ul>
+<li>KISTI의 딥러닝기반 예측 모형<span class="citation" data-cites="lee_deep_2021">(<a href="references.html#ref-lee_deep_2021" role="doc-biblioref">Lee, Ahn, and Kim 2021</a>)</span>은 문헌 집합인 기술 클러스터들의 성장 추세를 해당 문헌집합 내부에서 형성된 임베딩 구조와 임베딩 구조의 단기(1년) 변동 정보만으로도 중장기 고성장<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> 여부를 판별할 수 있음을 제시하였음. KISTI의 상시 미래 유망기술 발굴 활동<span class="citation" data-cites="kisti_deep_2020 kisti_future_2024">(<a href="references.html#ref-kisti_deep_2020" role="doc-biblioref">미래기술분석센터 2020</a>; <a href="references.html#ref-kisti_future_2024" role="doc-biblioref">김소영 et al. 2024</a>)</span>에 성공적으로 활용하였으며, 타 기관의 미래 기술 발굴활동에도 적용<span class="citation" data-cites="polar_2021 hankookilbo_2024 dongascience_2024">(<a href="references.html#ref-polar_2021" role="doc-biblioref">극지연구소 and KISTI 2021</a>; <a href="references.html#ref-hankookilbo_2024" role="doc-biblioref">한국일보 2024</a>; <a href="references.html#ref-dongascience_2024" role="doc-biblioref">과학동아 2024</a>)</span> 하였음.</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn6"><p><sup>6</sup>&nbsp;‘중장기’는 해당 클러스터의 7년 이후를 의미하며, ‘고성장’은 7년 뒤 시점에서 해당 클러스터가 상위 25% 이내의 성장률을 나타낸다는 것임. 본 분석을 수행한 2024년 상반기에는 2024년도 Leiden 클러스터가 발표되지 않은 상태(2024년 7월 3일 발표)였으며, 그에 따라 부득이하게 2023년도 판의 클러스터-문헌 매칭 데이터를 활용할 수밖에 없었음. 그런데 이 경우에는 매칭된 문헌의 최신 년도는 2021년도가 되며, 이를 기준으로 한 7년 후의 예측년도는 2028년으로 현재(2024년) 기준으로 4년 후 시점이 됨. 이는 통상 딥러닝 기반 예측 모형 적용에서 설정한 ‘5년 후’ 시점에서 1년이 단축되는 것임. 이 문제를 해소하기 위해 본 분석에서는 딥러닝 예측 모형에서 예측 시점을 기존 7년에서 8년으로 변경하고, 고성장 기준을 상위 30%로 다소 완화하였음.</p></div></div><div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-deep_learning_model_kdh" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-deep_learning_model_kdh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="images/deep_learning_model_kdh.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-5" title="그림&nbsp;48.5: 딥러닝 기반 성장성 예측모형의 기본 구조도"><img src="images/deep_learning_model_kdh.png" class="img-fluid figure-img column-body" width="1040"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-deep_learning_model_kdh-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;48.5: 딥러닝 기반 성장성 예측모형의 기본 구조도
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>본 분석에서는 딥러닝 모형의 구성을 기존의 표준적인 다층신경망(MLP) 기반 이외에 최신 어텐션(Attention) 기반 모델도 병행하였음<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>. 다층신경망 모델과 어텐션 모델의 예측 결과, 즉 고성장할 것으로 예측되는 아이템의 목록에는 다소 차이가 있으며 본 분석은 두 모델의 결과를 동시에 반영하는 전략을 취하였음.</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn7"><p><sup>7</sup>&nbsp;본 분석에서 딥러닝 예측모형의 정확도(Accuracy)는 다층신경망 기반 모형은 92.8%, 어텐션 기반 모형은 91.7%를 나타냈음.</p></div></div><div class="callout callout-style-default callout-tip callout-titled" title="지표값의 등급화">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+지표값의 등급화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="purple_tag">딥러닝 예측모형</span>의 결과는 8년 뒤 고성장 여부 예측확률이며 0에서 1사이의 값을 갖게 됨. 아이템 선별을 위한 점수 부여를 위해 등급을 구분<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>하여, 확률이 0.99 이상인 경우에는 <strong>10점</strong>, 0.9이상에서 0.99미만인 경우는 <strong>5점</strong>, 그 이외는 <strong>0점</strong> 처리하였으며, 다층신경망과 어텐션 모형 두가지 경우에 대해서 각각 점수화를 하여 개별 클러스터가 최대 20점, 최하 0점의 점수가 나오도록 조정하였음.</p>
+</div>
+</div>
+<div class="no-row-height column-margin column-container"><div id="fn8"><p><sup>8</sup>&nbsp;클러스터 아이템 선별에 활용한 지표는 6개 유형 총 22개 지표이며, [부록 2]에서 보듯이 각 지표별로 값들의 분포가 대부분 낮은 구간 값에 치우쳐 있음. 따라서 성장성 예측 확률이나 엑셀런스처럼 값 자체가 특별한 의미를 갖는 일부 경우를 제외하고는 값들을 5개 분위수로 구분하여 등급화하고, 상위 1분위, 2분위, 3분위를 각각 5점, 3점, 1점을 배분하고 나머지 분위는 0점 처리하여 지표값들의 변별력을 제고하였음.</p></div></div></section>
+<section id="급부상성emergence-score" class="level4 page-columns page-full" data-number="48.3.1.2">
+<h4 data-number="48.3.1.2" class="anchored" data-anchor-id="급부상성emergence-score"><span class="header-section-number">48.3.1.2</span> 급부상성(Emergence Score)</h4>
+<ul>
+<li>본 분석은 급부상성에 대한 지표로 <strong>Tech Mining</strong> 개념<span class="citation" data-cites="porter_tech_2005">(<a href="references.html#ref-porter_tech_2005" role="doc-biblioref">Porter and Cunningham 2005</a>)</span>을 오랜 기간 발전시켜온 미국 조지아공대 연구그룹에서 최근 제시한 급성장추세의 요약지표인 ‘Emergence Score’<span class="citation" data-cites="porter_emergence_2018">(<a href="references.html#ref-porter_emergence_2018" role="doc-biblioref">Porter et al. 2018</a>)</span>를 채택<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>하였음.</li>
+<li><strong>Emergence Score</strong>는 하위 3개 지표를 결합하여 구성하는데, 그 식은 다음과 같음.</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn9"><p><sup>9</sup>&nbsp;<strong>Emergence Score</strong> 지표가 추세 변동의 신규성(novelty), 지속성(persistence), 성장성(growth)을 비교적 고르게 반영한다고 주장함. 관련하여 연구주제(topic)에 대하여 ‘버스트 탐지(burst detection)’ 기법을 적용하고 이를 유망 영역 도출과 연결하려는 시도<span class="citation" data-cites="mane_mapping_2004 guo_mixed-indicators_2011 chen_predictive_2012">(<a href="references.html#ref-mane_mapping_2004" role="doc-biblioref">Mane and Börner 2004</a>; <a href="references.html#ref-guo_mixed-indicators_2011" role="doc-biblioref">Guo, Weingart, and Börner 2011</a>; <a href="references.html#ref-chen_predictive_2012" role="doc-biblioref">Chen 2012</a>)</span>가 있으나, ‘폭증(burst)’은 단기간 급증한 이벤트 성격이 더 강함. 연구 영역의 급속한 성장은 일정한 시계열 구간에서 ‘지속성’도 함께 확인되어야 하는데, <strong>Emergence Score</strong>는 이에 대한 적절한 대안으로 판단됨.</p></div></div><div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+급부상성(Emergence Score) 계산 공식
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Emergence Score = 2 <span class="math inline">\times</span> Active Period Trend <span class="math inline">+</span> (Recent Trend <span class="math inline">+</span> Mid-Year to Last-Year Slope)</p>
+</div>
+</div>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-es_scheme" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-es_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="images/emergence_score_scheme.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-6" title="그림&nbsp;48.6: Emergence Score 산출을 위한 시계열 구간 분해도"><img src="images/emergence_score_scheme.png" class="img-fluid figure-img column-body" width="1624"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-es_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;48.6: Emergence Score 산출을 위한 시계열 구간 분해도
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>Emergence Score</strong>는 <a href="#fig-es_scheme" class="quarto-xref">그림&nbsp;<span>48.6</span></a> 과 같이 최근 7개 년도 ‘활성화 구간’<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> 구간에서 발생하는 증감을 비교하여 3개 하위지표를 산출함. 또한 연도별 (비선형적) 규모의 증가로 인한 차이를 보정하기 위해 연도별 전체 문헌수에 제곱근을 취하고 이를 합산하는 방식을 적용</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn10"><p><sup>10</sup>&nbsp;활성화 구간(Active Period) 7개 년도는 이전 3개년도의 기반 구간(base period)과 합쳐서 10개년도 전체 구간을 형성함. 기반 구간의 존재는 활성화 구간과의 비교를 통해 신규성(novelty) 여부를 판단하기 위함이나, 대부분 클러스터가 10년을 훨씬 넘는 기간에 걸쳐 있는 경우가 많아 적절하지 않은 것으로 판단함. 본 분석에서는 개별 클러스터에 속한 문헌의 평균출판년도를 신규성의 대리지표로 설정하였음.</p></div></div><ul>
+<li><span class="teal_tag">Active Period Trend (활성구간 추세)</span>: 전체 활성화 구간에서 최근 3개년도의 빈도와 초기 3개년도의 빈도를 비교한 값임. 활성화 구간 전반에 걸친 증가 정도를 나타내기 위한 것으로 볼 수 있음.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Active Period Trend 계산 공식
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>{(해당 클러스터의 최근 3개년도 빈도) <span class="math inline">\div</span> <span class="math inline">\sum</span> ( <span class="math inline">\sqrt{}</span>(최근 3개년도 연도별 전체 문헌수} <span class="math inline">-</span> (해당 클러스터의 초기 3개년도 빈도) <span class="math inline">\div</span> <span class="math inline">\sum</span> ( <span class="math inline">\sqrt{}</span>(초기 3개년도 연도별 전체 문헌수)}</p>
+</div>
+</div>
+<ul>
+<li><span class="teal_tag">Recent Trend (최근 추세)</span>: 전체 활성화 구간에서 최근 2개년도의 빈도와 직전 2개년도의 빈도를 비교한 것임. 이 지표는 해당 클러스터에서 가장 최근접 시기의 급부상성 정도를 반영하기 위한 것으로 볼 수 있음.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Recent Trend 계산 공식
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>{<span class="math inline">10</span> <span class="math inline">\times</span> ((해당 클러스터의 최근 2개년도 빈도) <span class="math inline">\div</span> <span class="math inline">\sum</span> <span class="math inline">\sqrt{}</span>(최근 2개년 연도별 전체 문헌수) <span class="math inline">-</span> (해당 클러스터의 직전 2개년도 빈도) <span class="math inline">\div</span> <span class="math inline">\sum</span> <span class="math inline">\sqrt{}</span>(직전 2개년 연도별 전체 문헌수)) }</p>
+</div>
+</div>
+<ul>
+<li><span class="teal_tag">Mid-Year to Last-Year Slope (중반 이후 증가율)</span>: 전체 활성화 구간에서 중간 연도(=4년차 연도)와 마지막 연도(=7년차 연도) 사이의 빈도 차이에 의한 기울기임. 이 지표는 지속적인 상승의 추동가능성을 반영하기 위한 것으로 볼 수 있음.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Mid-Year to Last-Year Slope 계산 공식
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>{<span class="math inline">10</span> <span class="math inline">\times</span> ((해당 클러스터의 마지막 연도의 빈도) <span class="math inline">\div</span> <span class="math inline">\sqrt{}</span>(중간 연도의 전체 문헌수) <span class="math inline">-</span> (해당 클러스터의 중간 연도 빈도) <span class="math inline">\div</span> <span class="math inline">\sqrt{}</span>(마지막 연도의 전체 문헌수)) <span class="math inline">\div</span> <span class="math inline">3</span> (=년도차이))}</p>
+</div>
+</div>
+<ul>
+<li>급부상성(Emergence Score) 지수 값은 클러스터의 문헌 규모 성장에 대한 측면에서는 2015년에서 2021년 7개년 활성 구간에 대해서 산출하였고, 각 클러스터를 인용하는 문헌집합의 규모 즉, 클러스터의 확산 측면에서는 2개년 구간을 이동하여 2017년에서 2023년 구간 7개년 활성 구간에 대해서 산출하였음.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="지표값의 등급화">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+지표값의 등급화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="purple_tag">Emgergence Score</span> 는 전체 클러스터에서 산출된 값들의 분포를 5분위 구간으로 나누고, 상위 1분위는 <strong>5점</strong>, 상위 2분위는 <strong>3점</strong>, 3분위는 <strong>1점</strong>, 나머지는 <strong>0점</strong>으로 처리하였음. 따라서 출판 문헌 기준의 Emergence Score와 확산 기준의 Emergence Score를 결합하면 클러스터는 최대 10점 최소 0점이 나오게 됨.</p>
+</div>
+</div>
+</section>
+<section id="신규성" class="level4 page-columns page-full" data-number="48.3.1.3">
+<h4 data-number="48.3.1.3" class="anchored" data-anchor-id="신규성"><span class="header-section-number">48.3.1.3</span> 신규성</h4>
+<ul>
+<li>클러스터의 신규성은 해당 클러스터에 속한 문헌들의 출판년도를 각 년도의 문헌수 비율을 반영한 가중년도로 산출함. 이 결과는 해당 클러스터에 대해 일종의 ‘나이’<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>로 의미를 부여할 수 있음.</li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn11"><p><sup>11</sup>&nbsp;<strong>Leiden Cluster</strong> 발표 시 함께 제공하는 클러스터별 속성 테이블에는 <code>Avg. pub. year</code> 가 있는데, 이 값은 클러스터에 속한 2000-2022년도 문헌의 가중평균임. 이 기간은 <strong>CWTS</strong>에서 클러스터링 작업 대상으로 포함하는 것이며 클러스터-문헌 매칭테이블에는 <strong>Leiden Ranking</strong>의 분석 범위인 2006-2021년도 기간의 문헌만 포함되어 있음. 따라서 본 분석에서 활용한 신규성 지표 값은 2006-2021년도 기간에 한정하여 새로 생성한 것임.</p></div></div><div class="callout callout-style-default callout-tip callout-titled" title="지표값의 등급화">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+지표값의 등급화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="purple_tag">신규성</span> 즉 클러스터의 나이에 해당하는 지표값 역시 전체 분포를 5분위 구간으로 분할하고, 상위 1분위는 <strong>5점</strong>, 상위 2분위는 <strong>3점</strong>, 3분위는 <strong>1점</strong>, 나머지는 <strong>0점</strong>으로 처리하였음. 따라서 클러스터별로 최대 5점 최소 0점이 나오게 됨.</p>
+</div>
+</div>
+</section>
+<section id="장기추세" class="level4" data-number="48.3.1.4">
+<h4 data-number="48.3.1.4" class="anchored" data-anchor-id="장기추세"><span class="header-section-number">48.3.1.4</span> 장기추세</h4>
+<ul>
+<li><p>클러스터의 다이내믹스에서 ‘장기추세’에 대한 지표는 시계열 분석에서 가장 널리 활용되는 연평균복합성장율(CAGR)을 적용하였음. Emergence Score에서 적용했듯이 Leiden Cluster 자체 문헌수의 성장 추이와 병행하여, 해당 클러스터를 인용하는 집합, 즉 확산 규모의 성장 추이도 함께 산출하였음.</p>
+<ul>
+<li>문헌 규모의 CAGR은 전체 시구간(2006-2021년)에서 연도별 문헌수를 3개년 이동평균한 값을 입력값으로 계산하였음. 확산 규모의 CAGR은 전체 시구간에서 최근 2년을 확장하여 2006-2023년도에서 발생한 클러스터별로 클러스터에 대한 인용문헌의 연도별 문헌수를 역시 3개년 이동평균하여 처리하였음.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="지표값의 등급화">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+지표값의 등급화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="purple_tag">장기추세</span> 연평균복합성장율 CAGR 또한 문헌규모, 확산규모 2개 지표별 전체 분포를 5분위 구간으로 분할하고, 상위 1분위는 <strong>5점</strong>, 상위 2분위는 <strong>3점</strong>, 3분위는 <strong>1점</strong>, 나머지는 <strong>0점</strong>으로 처리하였음. 따라서 클러스터별로 최대 10점 최소 0점이 나오게 됨.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="융합성diversity" class="level3 page-columns page-full" data-number="48.3.2">
+<h3 data-number="48.3.2" class="anchored" data-anchor-id="융합성diversity"><span class="header-section-number">48.3.2</span> 융합성(Diversity)</h3>
+<ul>
+<li>본 분석에서 융합성은 <span class="royal_tag">지식통합(knowledge integration)</span> 기반의 관점을 채택함. 즉 연구개발 활동에서 ‘융합’이란 다양한 분야의 지식 요소들을 동원하고 이를 결합하여 새로운 지식을 창출하는 과정이며, ‘학제성(interdisciplinarity)’의 의미도 이러한 관점에서 해석되어야 한다고 것임<span class="citation" data-cites="porter_is_2009 rafols_diversity_2010 leydesdorff_local_2011 rafols_how_2012 ding_knowledge_2014 cassi_how_2014 zhang_diversity_2016 wang_measuring_2017 glanzel_knowledge_2019 wang_consistency_2019 mutz_diversity_2022 zwanenburg_toward_2022">(<a href="references.html#ref-porter_is_2009" role="doc-biblioref">Porter and Rafols 2009</a>; <a href="references.html#ref-rafols_diversity_2010" role="doc-biblioref">Rafols and Meyer 2010</a>; <a href="references.html#ref-leydesdorff_local_2011" role="doc-biblioref">Leydesdorff and Rafols 2011</a>; <a href="references.html#ref-rafols_how_2012" role="doc-biblioref">Rafols et al. 2012</a>; <a href="references.html#ref-ding_knowledge_2014" role="doc-biblioref">Rafols 2014</a>; <a href="references.html#ref-cassi_how_2014" role="doc-biblioref">Cassi, Mescheba, and Turckheim 2014</a>; <a href="references.html#ref-zhang_diversity_2016" role="doc-biblioref">Zhang, Rousseau, and Glänzel 2016</a>; <a href="references.html#ref-wang_measuring_2017" role="doc-biblioref">X. Wang et al. 2017</a>; <a href="references.html#ref-glanzel_knowledge_2019" role="doc-biblioref">Rousseau, Zhang, and Hu 2019</a>; <a href="references.html#ref-wang_consistency_2019" role="doc-biblioref">Q. Wang and Wiborg Schneider 2019</a>; <a href="references.html#ref-mutz_diversity_2022" role="doc-biblioref">Mutz 2022</a>; <a href="references.html#ref-zwanenburg_toward_2022" role="doc-biblioref">Zwanenburg, Nakhoda, and Whigham 2022</a>)</span>.</li>
+</ul>
+<section id="sec-rs_diversity" class="level4 page-columns page-full" data-number="48.3.2.1">
+<h4 data-number="48.3.2.1" class="anchored" data-anchor-id="sec-rs_diversity"><span class="header-section-number">48.3.2.1</span> Rao-Stirling 지수</h4>
+<ul>
+<li>지식통합의 관점에서 다양성(diversity)의 측정은 <a href="#fig-diversity_scheme" class="quarto-xref">그림&nbsp;<span>48.7</span></a> 과 같이 문헌 간 인용 관계에서 문헌에 부여한 분류(코드)의 분포와 분류 간의 인지적 거리를 계산하여, 다종성(variety), 균등성(balance), 이질성(disparity)의 요소를 통합하는 Rao-Stirling 지수를 활용</li>
+</ul>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-diversity_scheme" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-diversity_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="images/diversity_scheme.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-7" title="그림&nbsp;48.7: 다양성 측정 과정의 도식"><img src="images/diversity_scheme.png" class="img-fluid figure-img column-page-inset-right" width="1756"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diversity_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;48.7: 다양성 측정 과정의 도식
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-rs_scheme" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-rs_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="images/diversity_rs_scheme.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-8" title="그림&nbsp;48.8: Rao-Stirling 지수의 세가지 요소 결합 개념도(Rafols and Meyer 2010 인용)"><img src="images/diversity_rs_scheme.png" class="img-fluid figure-img column-body" width="768"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rs_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;48.8: Rao-Stirling 지수의 세가지 요소 결합 개념도(Rafols and Meyer 2010 인용)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li><p>다종성(Variety): 실제 측정하는 대상에 존재하는 분류의 가짓수를 의미함. Rao-Stirling 지수(<span class="math inline">D</span>)를 <span class="math inline">\frac{1}{1-D}</span>로 변형하면 ‘Hill-Type True Diversity’<span class="citation" data-cites="zhang_diversity_2016">(<a href="references.html#ref-zhang_diversity_2016" role="doc-biblioref">Zhang, Rousseau, and Glänzel 2016</a>)</span> 가 되어 단순히 분류의 갯수가 아니라 ‘동등하게 풍부하고 완전히 다른 종’의 유효한 수(effective number)를 의미하게 되면서 다종성에 대한 해석을 강조하는데 도움이 됨. 물론 단순한 값의 변형이므로 Rao-Stirling 값과 True Diversity의 분위수 분포 자체는 동일함.</p></li>
+<li><p>균등성(Balance): 측정 대상에서 분류가 얼마나 균등하게 분포되어 있는지를 의미함. 엔트로피, Simpson, Gini 등 다양성 지수의 상당수가 이러한 분포적 특성을 포착하려고 한 시도임. Rao-Stirling 지수는 분류 분포 정보에 분류 간의 인지적 거리 요소를 결합하여 다양성 측정을 개선하고자 한 것임.</p></li>
+<li><p>이질성(Disparity): 측정 대상에 존재하는 분류가 질적으로 얼마나 차이가 있는 지를 의미함<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>. Rao-Stirling 지수에서 중요한 요소이며 분류 간에 존재하는 ‘인지적 거리’에 대한 정보는 특정한 측정 대상을 넘어선 전체 ‘생태계’ 집합에서 산출되어야 함.</p></li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn12"><p><sup>12</sup>&nbsp;측정 대상에서 이질성에 대한 요소만 별도로 측정하고자 한다면 측정 대상에 존재하는 분류에 대해 분류 간 거리 값들의 평균으로 나타낼 수 있음.</p></div></div><ul>
+<li><p>본 분석에서는 클러스터의 전체 시구간 중 최근 5년 기간(2017-2021년)에 대해서 Rao-Stirling 지수를 측정하였으며 핵심적인 측정 요소인 문헌의 분류코드 체계는 Web of Science Category와 Citation Topics의 meso 단위 분류 2가지를 병행하였음.</p>
+<ul>
+<li><p>융합성을 최근 5년에 한정한 것은 다음과 같은 사항을 고려한 것임. 1) 클러스터 단위로 측정한 융합성 추이 변동이 전반적으로 크지 않은 상태에서는 융합성의 증감 고려시 작은 변동이 과도하게 반영될 수 있음. 2) 융합성의 변동보다는 클러스터에서 관측된 융합성의 ‘대역(band)’ 위치, 즉 융합성의 높고 낮은 정도 자체가 더욱 중요한 정보임.</p></li>
+<li><p>Web of Science Category는 문헌이 속한 출판물(주로 학술지) 단위로 부여(복분류 허용)하는 것으로 총 245개가 존재함. Citation Topics는 개별 문헌단위로 부여(단일 분류)되는 것으로, meso 단위에는 총 326개가 존재함. 해당 분류에 분류 간의 거리는 측정 구간(2017-2021년) 전체 문헌에 대해서 산출하였음.</p></li>
+<li><p>Rao-Stirling 지수에서 문헌 인용으로 발생하는 분류의 ‘동원’ 정도에 대한 측정은 문헌의 인용수와 부여한 분류갯수를 고려한 분할(fractional) 처리 정규화 방식을 적용함. 즉, 개별 문헌에서 발생한 지식 동원의 총량을 <strong>1</strong> 로 고정하고, 이를 인용한 문헌수(=참고문헌수)와 인용한 문헌에 부여된 분류의 갯수에 따라 분할한 비율을 부여하는 것임.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="매개-중심성" class="level4 page-columns page-full" data-number="48.3.2.2">
+<h4 data-number="48.3.2.2" class="anchored" data-anchor-id="매개-중심성"><span class="header-section-number">48.3.2.2</span> 매개 중심성</h4>
+<ul>
+<li><p>본 4PN 분석에서 융합성 측정 대상인 클러스터 간에는 인용을 서로 주고 받는, 즉 ‘지식 흐름(flow)’<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>이 존재함. 이로부터 형성되는 지식 흐름 네트워크에서는 클러스터가 차지하는 위상이 융합성의 주요한 측면을 드러내주게 되는데, 특히 <strong>매개 중심성</strong>(Betweenness Centrality) 지수는 학제성(interdisciplinarity) 개념과 연결하여 많이 논의되었음<span class="citation" data-cites="leydesdorff_betweenness_2007 wagner_approaches_2011 goldman_conceptualizing_2014 leydesdorff_betweenness_2018 park_technological_2018 van_den_besselaar_interdisciplinary_2019">(<a href="references.html#ref-leydesdorff_betweenness_2007" role="doc-biblioref">Leydesdorff 2007</a>; <a href="references.html#ref-wagner_approaches_2011" role="doc-biblioref">Wagner et al. 2011</a>; <a href="references.html#ref-goldman_conceptualizing_2014" role="doc-biblioref">Goldman 2014</a>; <a href="references.html#ref-leydesdorff_betweenness_2018" role="doc-biblioref">Leydesdorff, Wagner, and Bornmann 2018</a>; <a href="references.html#ref-park_technological_2018" role="doc-biblioref">Park and Yoon 2018</a>; <a href="references.html#ref-van_den_besselaar_interdisciplinary_2019" role="doc-biblioref">Van Den Besselaar 2019</a>)</span> .</p>
+<ul>
+<li>매개 중심성은 네트워크 상의 각 노드 간의 최단 거리에 존재하는 정도를 정량화한 것으로, 흐름에서 중개자 기능을 가늠하는 지표로 많이 활용됨. 본 분석에서 매개 중심성의 측정은 융합성과 동일한 시구간(2017-2021년)에서 발생한 클러스터 간 인용관계를 추출하여 계산하였음.</li>
+</ul></li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn13"><p><sup>13</sup>&nbsp;개별 문헌에서 발생한 인용을 클러스터 단위로 집산(aggregation)하는 것으로, 융합성 측정처럼 역시 분할 방식을 적용하였음. 예를 들어 F 클러스터에 속한 특정한 문헌에 5개의 인용문헌이 있고, 각 인용문헌 중 2개는 A클러스터, 3개는 B클러스터에 속해 있다면, 이 하나의 문헌에서 F클러스터에서 A클러스터에 대한 인용이 0.4, F클러스터에서 B클러스터의 인용은 0.6이 발생한 것으로 처리하는 것임.</p></div></div><div class="callout callout-style-default callout-tip callout-titled" title="지표값의 등급화">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+지표값의 등급화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="purple_tag">융합성</span> 세가지 측정 지표 값 모두 전체 분포를 5분위 구간으로 분할하고, 상위 1분위는 <strong>5점</strong>, 상위 2분위는 <strong>3점</strong>, 3분위는 <strong>1점</strong>, 나머지는 <strong>0점</strong>으로 처리하였음. 따라서 클러스터별로 최대 15점 최소 0점이 나오게 됨.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="영향력impact" class="level3 page-columns page-full" data-number="48.3.3">
+<h3 data-number="48.3.3" class="anchored" data-anchor-id="영향력impact"><span class="header-section-number">48.3.3</span> 영향력(Impact)</h3>
+<section id="상위-10-엑셀런스" class="level4 page-columns page-full" data-number="48.3.3.1">
+<h4 data-number="48.3.3.1" class="anchored" data-anchor-id="상위-10-엑셀런스"><span class="header-section-number">48.3.3.1</span> 상위 10% 엑셀런스</h4>
+<ul>
+<li><p>본 분석에서는 개별 클러스터별로 전체 과학기술 지형에서 갖고 있는 파급력의 수준을 측정하기 위해서 연구수준 분석에서 사실상의 표준으로 정립되어 널리 활용되고 있는 ‘엑셀런스’<span class="citation" data-cites="hicks_leiden_2015 glanzel_field_2019 kisti_excel_2019">(<a href="references.html#ref-hicks_leiden_2015" role="doc-biblioref">Hicks et al. 2015</a>; <a href="references.html#ref-glanzel_field_2019" role="doc-biblioref">Waltman and Van Eck 2019</a>; <a href="references.html#ref-kisti_excel_2019" role="doc-biblioref">이준영·박진서 2019</a>)</span> 지수를 활용하였음.</p>
+<ul>
+<li><p>‘엑셀런스’ 지수는 측정 대상<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a>의 문헌집합이 각 문헌들이 속한 분야(분류)에서 피인용수가 일정수준(예, 상위 10%, 상위 1% 등)이상인 것들이 포함된 비율을 의미함. 엑셀런스 지수는 측정 대상의 규모에 영향을 받지 않는 점, 피인용수 분포의 비대칭성에 따른 비교의 어려움<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>도 해소할 수 있는 장점이 있음. 엑셀런스 지수에서 우수성 판별 기준은 상위10% 기준시 <strong>10</strong>으로, 이는 일종의 ‘기대 수준’을 뜻함. 엑셀런스 지수가 10 이상이라는 것은 상위 10% 이상인 문헌의 비율이 10%를 초과한다는 것으로 기대값 수준을 넘어선다는 것임.</p></li>
+<li><p>본 분석은 클러스터 간의 비교가 목적이므로, 피인용수의 분위수가 계산되는 영역은 해당 분야가 속한 Web of Science Category를 적용하였음. 정규화를 위해 동일한 출판년도, 동일한 문헌유형(Article), 동일한 분류인 집합 내에서 분위수를 계산하였음. 피인용수 동점 처리의 과학적 처리를 위한 분할 방식<span class="citation" data-cites="waltman_calculation_2013">(<a href="references.html#ref-waltman_calculation_2013" role="doc-biblioref">Waltman and Schreiber 2013</a>)</span>, 복분류로 인한 분위점수의 처리는 평균 적용 방식<span class="citation" data-cites="bornmann_which_2013">(<a href="references.html#ref-bornmann_which_2013" role="doc-biblioref">Bornmann, Leydesdorff, and Wang 2013</a>)</span>을 적용하였음.</p></li>
+<li><p>연도별로 측정한 피인용수 분위수 값을 2016-2018년, 2019-2021 3개년씩 묶어 2개 시구간에서 개별 클러스터 단위로 엑셀런스 값을 계산하였음.</p></li>
+</ul></li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn14"><p><sup>14</sup>&nbsp;연구수준 분석에서 측정 대상은 보통 연구 주체(연구자, 그룹, 기관, 국가 등)가 산출한 문헌집합으로 설정되지만, 본 분석에서처럼 잘 정의된 연구영역의 문헌집합에 대해 적용할 수 있음.</p></div><div id="fn15"><p><sup>15</sup>&nbsp;문헌의 피인용수를 동일 분야의 ‘평균 값’과 비교하는 방식도 자주 활용되는 방식이나, 피인용수의 분포가 멱함수 분포와 같은 비대칭성을 가지므로 ‘평균’ 값 자체가 대표적 특성을 갖기 어려운 상황이 발생함.</p></div></div><div class="callout callout-style-default callout-tip callout-titled" title="지표값의 등급화">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+지표값의 등급화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="purple_tag">영향력</span>은 클러스터별로 2개 시구간에서 구한 상위10% 엑셀런스 지수값의 전체 분포를 5분위 구간으로 분할하고, 상위 1분위는 <strong>5점</strong>, 상위 2분위는 <strong>3점</strong>, 3분위는 <strong>1점</strong>, 나머지는 <strong>0점</strong>으로 처리하였음. 따라서 클러스터별로 최대 10점 최소 0점이 나오게 됨.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="산업-연계성industrial-linkage" class="level3 page-columns page-full" data-number="48.3.4">
+<h3 data-number="48.3.4" class="anchored" data-anchor-id="산업-연계성industrial-linkage"><span class="header-section-number">48.3.4</span> 산업 연계성(Industrial linkage)</h3>
+<ul>
+<li>산업 연계성은 논문 문헌집합인 클러스터를 논문과 특허의 인용 (양방향) 관계를 이용하여 해당 클러스터가 산업 영역과 맺는 연결의 정도를 정량화하고자 한 것임. 논문과 특허 간의 인용은 ‘Science-Technology Linkage’라는 개념 하게 여러 관련 연구<span class="citation" data-cites="li_patent_2014 jefferson_mapping_2018 knaus_parma_2018 kuan_overlooked_2020 hsiao_technology_2020 bryan_-text_2020 marx_reliance_2020 hammarfelt_linking_2021 ba_novel_2021 marx_reliance_2022">(<a href="references.html#ref-li_patent_2014" role="doc-biblioref">Li et al. 2014</a>; <a href="references.html#ref-jefferson_mapping_2018" role="doc-biblioref">Jefferson et al. 2018</a>; <a href="references.html#ref-knaus_parma_2018" role="doc-biblioref">Knaus and Palzenberger 2018</a>; <a href="references.html#ref-kuan_overlooked_2020" role="doc-biblioref">Kuan, Chen, and Huang 2020</a>; <a href="references.html#ref-hsiao_technology_2020" role="doc-biblioref">Hsiao and Torvik 2020</a>; <a href="references.html#ref-bryan_-text_2020" role="doc-biblioref">Bryan, Ozcan, and Sampat 2020</a>; <a href="references.html#ref-marx_reliance_2020" role="doc-biblioref">Marx and Fuegi 2020</a>, <a href="references.html#ref-marx_reliance_2022" role="doc-biblioref">2022</a>; <a href="references.html#ref-hammarfelt_linking_2021" role="doc-biblioref">Hammarfelt 2021</a>; <a href="references.html#ref-ba_novel_2021" role="doc-biblioref">Ba and Liang 2021</a>)</span>들이 수행되었고, 최근에는 자연어처리와 머신러닝 기법을 결합하여 논문-특허 간 인용관계 데이터의 품질을 높이려는 시도도 활발히 진행</li>
+</ul>
+<section id="산업-활용성" class="level4" data-number="48.3.4.1">
+<h4 data-number="48.3.4.1" class="anchored" data-anchor-id="산업-활용성"><span class="header-section-number">48.3.4.1</span> 산업 활용성</h4>
+<ul>
+<li><p><span class="seagreen_tag">산업 활용성</span>은 클러스터에 속한 논문 문헌 집합에서 특허에 인용(forward citation)된 비율을 계산한 것으로, 해당 데이터는 미국의 <a href="https://relianceonscience.org/">Reliance on Science</a> 연구 그룹이 공개한 특허와 문헌 고유번호(DOI) 연계 테이블을 이용하였음.</p>
+<ul>
+<li><p><span class="slateblue_tag">Nature Index</span><span class="citation" data-cites="noauthor_guide_2022">(<a href="references.html#ref-noauthor_guide_2022" role="doc-biblioref"><span>“A Guide to the <span>Nature</span> <span>Index</span>”</span> 2022</a>)</span> 에서 주요 지표로 설정한 ‘Patent influence metric’은 분석대상 연구주체가 산출한 문헌 집합에서 특허에 인용되는 문헌의 비율을 계산하는 것인데, 본 분석의 지표와 매우 유사하다고 할 수 있음. ‘Patent influence’ 지표는 본 분석의 ‘산업 기반성’이 담고있는 측면, 즉 논문 문헌집합에서 특허를 인용하는 경우는 고려하지 않음.</p></li>
+<li><p>논문-특허 간의 인용이 지속적으로 일정하게 발생하기보다는 산발적이고 불규칙하게 발생하는 것으로 가정되므로, 전체 기간(2006-2021년)과 최근 5년(2017-2021년) 기간을 구분하고 장기간에 걸친 상태와 가장 최근의 중장기 구간 상태를 모두 반영할 수 있게 처리하였음.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="산업-기반성" class="level4 page-columns page-full" data-number="48.3.4.2">
+<h4 data-number="48.3.4.2" class="anchored" data-anchor-id="산업-기반성"><span class="header-section-number">48.3.4.2</span> 산업 기반성</h4>
+<ul>
+<li><p><span class="seagreen_tag">산업 기반성</span>은 클러스터의 논문 문헌 집합 참고문헌에서 추출할 수 있는 특허 문서번호<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a>를 기반으로, 해당 클러스터 문헌에서 특허를 인용한(backward citation) 논문이 차지하는 비율을 계산한 것임.</p>
+<ul>
+<li>산업 기반성의 경우에도 역시 전체 기간(2006-2021년)과 최근 5년(2017-2021년) 기간을 구분하여 장기간 상태와 최근 상태를 모두 반영하도록 처리하였음.</li>
+</ul></li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn16"><p><sup>16</sup>&nbsp;논문 참고문헌에 수록된 특허번호 정보는 정제를 거친 결과물이 아니어서, 데이터 정제 작업과 함께 PATSTAT 특허DB에 수록된 전세계 특허의 출원번호, 공개번호, 등록번호와 일일이 매칭하는 작업을 수행하였음. PATSTAT DB에서 정확히 매칭 성공한 특허만 인정하여 계산하였음. 한편, 특정 논문에서 특허를 다수 인용하는 경우가 꽤 있으나 지표에서는 특허 인용의 발생여부만을 고려하였음.</p></div></div><div class="callout callout-style-default callout-tip callout-titled" title="지표값의 등급화">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+지표값의 등급화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="purple_tag">산업 연계성</span>은 산업 활용성과 산업 기반성 2가지 주제에서 각 2개씩 측정 지표가 산출되었으며, 역시 각 지표 값의 전체 분포를 5분위 구간으로 분할하고, 상위 1분위는 <strong>5점</strong>, 상위 2분위는 <strong>3점</strong>, 3분위는 <strong>1점</strong>, 나머지는 <strong>0점</strong>으로 처리하였음. 따라서 클러스터별로 최대 20점 최소 0점이 나오게 됨.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="투자-기반성fund-intensity" class="level3 page-columns page-full" data-number="48.3.5">
+<h3 data-number="48.3.5" class="anchored" data-anchor-id="투자-기반성fund-intensity"><span class="header-section-number">48.3.5</span> 투자 기반성(Fund Intensity)</h3>
+<ul>
+<li><p>공공 R&amp;D 투자의 여러 성과물 가운데 하나인 논문 데이터를 이용하여 투자의 효과, 투자가 발생한 영역에 대한 영향 등에 대한 다양한 연구들<span class="citation" data-cites="laudel_beyond_2014 wang_is_2015 rosenbloom_effects_2015 huang_how_2016 yin_does_2018 fleming_government-funded_2019 alvarez-bornstein_is_2021 thelwall_what_2023">(<a href="references.html#ref-laudel_beyond_2014" role="doc-biblioref">Laudel and Gläser 2014</a>; <a href="references.html#ref-wang_is_2015" role="doc-biblioref">J. Wang and Shapira 2015</a>; <a href="references.html#ref-rosenbloom_effects_2015" role="doc-biblioref">Rosenbloom et al. 2015</a>; <a href="references.html#ref-huang_how_2016" role="doc-biblioref">Huang et al. 2016</a>; <a href="references.html#ref-yin_does_2018" role="doc-biblioref">Yin, Liang, and Zhi 2018</a>; <a href="references.html#ref-fleming_government-funded_2019" role="doc-biblioref">Fleming et al. 2019</a>; <a href="references.html#ref-alvarez-bornstein_is_2021" role="doc-biblioref">Álvarez-Bornstein and Bordons 2021</a>; <a href="references.html#ref-thelwall_what_2023" role="doc-biblioref">Thelwall et al. 2023</a>)</span>이 수행되었음.</p>
+<ul>
+<li>본 분석은 국가의 전략적인 선택에 의한 공공 연구개발 투자 관련 정보에는 국가의 연구개발 중장기 전략, 연구 포트폴리오, 연구기반 수준을 가늠할 수 있는 중요한 신호들이 담겨 있음을 전제로 함. 이를 위해 한국의 NTIS 서비스의 과제정보와 성과정보를 Leiden Cluster의 문헌집합과 매칭<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a>하여 한국의 해당 클러스터에 얼마나 기반을 구축했는지를 측정하고자 하였음.</li>
+</ul></li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn17"><p><sup>17</sup>&nbsp;NTIS 성과 정보에는 프로젝트의 성과물로 Web of Science SCIE 논문 데이터 정보가 구축되어 있음. 그러나 2017년도 이전의 데이터는 논문 서지 정보의 표준화 작업이 적용되지 않았으며 DOI와 같은 문헌 고유번호 정보도 수록되어 있지 못함. 따라서 본 분석에서 투자 기반성 분석의 기간은 2017-2021년 5개년 간에 한정함.</p></div></div><section id="투자-규모" class="level4 page-columns page-full" data-number="48.3.5.1">
+<h4 data-number="48.3.5.1" class="anchored" data-anchor-id="투자-규모"><span class="header-section-number">48.3.5.1</span> 투자 규모</h4>
+<ul>
+<li><p>각 클러스터의 문헌집합에서 NTIS 성과정보를 매칭하고 각 문헌에서 <a href="#fig-fund_fractional_scheme" class="quarto-xref">그림&nbsp;<span>48.9</span></a> 와 같이 2단계 분할 방식을 거쳐 확정한 금액을 모두 합산</p>
+<ul>
+<li>논문은 개별 과제 기준으로 복수 개가 존재할 수 있으며, 특정 논문 기준으로는 여러 개 과제에 이른바 ‘유발과제’로 매칭될 수 있음. 문제는 이 상황에서 개별 논문에 투여된 금액을 확정할 수 있는 확실한 정보가 없다는 사실임. 특정 과제에서 성과로 기재한 논문을 발생하기 위해 소요된 비용 정보는 애초에 존재하지 않으며, 유발과제별로도 해당 논문의 기여율이 형식상으로 입력하도록 되어 있으나 비어 있거나 0으로 처리한 경우가 많이 존재함.</li>
+</ul></li>
+</ul>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-fund_fractional_scheme" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="quarto-float quarto-float-fig figure page-columns page-full">
+<div aria-describedby="fig-fund_fractional_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca" class="page-columns page-full">
+<a href="images/fund_fractional_scheme.png" class="lightbox page-columns page-full" data-gallery="quarto-lightbox-gallery-9" title="그림&nbsp;48.9: 투자 규모 확정을 위한 유발논문수와 유발과제수 고려 분할방식"><img src="images/fund_fractional_scheme.png" class="img-fluid figure-img column-body" width="1098"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fund_fractional_scheme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+그림&nbsp;48.9: 투자 규모 확정을 위한 유발논문수와 유발과제수 고려 분할방식
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>이러한 상황을 해결하기 위해 <a href="#fig-fund_fractional_scheme" class="quarto-xref">그림&nbsp;<span>48.9</span></a> 은 논문 갯수(N1), 유발과제 갯수(N2)를 순차적으로 반영하도록 설계하였음. 즉, 1차로 특정 과제의 사업비를 산출된 논문 갯수로 나누어 준 금액을 배분하고, 2차로는 각 유발과제 각각에 존재하는 분할 사업비들을 연관된 유발과제의 규모를 고려하여 가중평균하는 방식을 적용함.</li>
+</ul>
+</section>
+<section id="투자-활성도" class="level4" data-number="48.3.5.2">
+<h4 data-number="48.3.5.2" class="anchored" data-anchor-id="투자-활성도"><span class="header-section-number">48.3.5.2</span> 투자 활성도</h4>
+<ul>
+<li><p>투자의 규모도 중요하지만 해당 클러스터와 매칭된 과제의 갯수도 투자의 활성화 정도를 가늠할 수 있는 주요한 정보임.</p>
+<ul>
+<li>본 분석에서는 특정 논문에서 NTIS에 유발과제가 입력된 고유한 (세부)과제를 추출하고, 이를 클러스터 단위에서 합산한 뒤 중복을 제거하여 최종 매칭 과제 수를 산출하였음.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="지표값의 등급화">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+지표값의 등급화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="purple_tag">투자 기반성</span>은 투자 규모, 연계 과제수 2가지 측정 지표에서 산출되었으며, 역시 각 지표 값의 전체 분포를 5분위 구간으로 분할하고, 상위 1분위는 <strong>5점</strong>, 상위 2분위는 <strong>3점</strong>, 3분위는 <strong>1점</strong>, 나머지는 <strong>0점</strong>으로 처리하였음. 따라서 클러스터별로 최대 10점 최소 0점이 나오게 됨.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="한국-연구기반수준koreas-reseach-capacity" class="level3" data-number="48.3.6">
+<h3 data-number="48.3.6" class="anchored" data-anchor-id="한국-연구기반수준koreas-reseach-capacity"><span class="header-section-number">48.3.6</span> 한국 연구기반/수준(Korea’s reseach capacity)</h3>
+<ul>
+<li>본 4PN 분석의 결과가 향후 국가 연구개발 과제 기획시 연구영역의 전략적 선택에 참조될 수 있기 위해서는 해당 연구주제를 수행할 수 있는 국내 기반의 수준에 대한 정보가 매우 중요함. 이를 위해 본 분석은 해당 클러스터 저자 소속 기관의 국가가 한국인 경우가 차지하는 비율, 즉 점유율과 함께 해당 한국 소속 문헌의 상위 10% 엑셀런스 지수를 산출하였음.</li>
+</ul>
+<section id="전체-점유율" class="level4" data-number="48.3.6.1">
+<h4 data-number="48.3.6.1" class="anchored" data-anchor-id="전체-점유율"><span class="header-section-number">48.3.6.1</span> 전체 점유율</h4>
+<ul>
+<li><p>해당 클러스터 전체 기간(2006-2021년)과 최근 5년(2017-2021년) 각각에서 한국 소속 연구기관이 참여한 문헌이 클러스터의 해당 기간 문헌집합에서 차지하는 비율임. 저자의 국가별 분포비율을 반영하는 분할(fractional) 방식 계산 대신에, 한 명이라도 참여시 일단 &amp;#8216한국 참여’ 문헌으로 분류하고 이를 합산하는 방식(whole)을 적용함.</p>
+<ul>
+<li>1순위 저자, 교신저자 여부에 대한 가중치 적용은 고려하지 않았으며, 해당 클러스터에 전반적으로 한국이 차지하는 ‘지분’을 도출하는 것에 초점을 둠.</li>
+</ul></li>
+</ul>
+</section>
+<section id="sec-excel_indi" class="level4" data-number="48.3.6.2">
+<h4 data-number="48.3.6.2" class="anchored" data-anchor-id="sec-excel_indi"><span class="header-section-number">48.3.6.2</span> 엑셀런스</h4>
+<ul>
+<li><p>해당 클러스터의 직전 3년(2016-2018년)과 최근 3년(2019-2021년) 두 개 구간에 대해 한국 참여 논문 문헌을 도출하고, 이 한국참여 문헌집합에 대해 상위 10% 엑셀런스 값을 계산하였음. 앞서 전체 클러스터 영향력 측정 경우와 같이 Web of Science Category 기반으로 백분위수를 산출하였음.</p>
+<ul>
+<li>상위 10% 엑셀런스는 보통 10을 기준선으로 우수 여부를 등급화하는데, 본 분석에서는 아래 박스 설명에서처럼 20이상, 15이상 20미만, 10이상 15미만 구간을 각각 5점, 3점, 1점을 부여하고 나머지는 0점 처리하는 방식을 적용하였음.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="지표값의 등급화">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+지표값의 등급화
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="purple_tag">한국 연구기반/수준</span>은 한국의 점유율과 상위 10% 엑셀런스에 대해 각각 2개 구간에서 측정 지표값을 산출하였음. 점유율의 경우 값의 전체 분포를 5분위 구간으로 분할하고, 상위 1분위는 <strong>5점</strong>, 상위 2분위는 <strong>3점</strong>, 3분위는 <strong>1점</strong>, 나머지는 <strong>0점</strong>으로 처리하였음. 이에 반해 엑셀런스는 값 자체의 절대적 의미를 반영하여 등급을 조절하였음. 즉, 엑셀런스 값이 기대수준 10의 2배인 20 이상인 경우 1분위에 해당하는 <strong>5점</strong>, 15이상 20 미만인 경우에는 <strong>3점</strong>, 10이상 15미만인 경우는 <strong>1점</strong>, 나머지는 0점 처리함. 따라서 클러스터별로 최대 20점 최소 0점이 나오게 됨.</p>
+</div>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-noauthor_guide_2022" class="csl-entry" role="listitem">
+<span>“A Guide to the <span>Nature</span> <span>Index</span>.”</span> 2022. <em>Nature</em>, December. <a href="https://doi.org/10.1038/d41586-022-04208-z">https://doi.org/10.1038/d41586-022-04208-z</a>.
+</div>
+<div id="ref-alvarez-bornstein_is_2021" class="csl-entry" role="listitem">
+Álvarez-Bornstein, Belén, and María Bordons. 2021. <span>“Is Funding Related to Higher Research Impact? <span>Exploring</span> Its Relationship and the Mediating Role of Collaboration in Several Disciplines.”</span> <em>Journal of Informetrics</em> 15 (1): 101102. <a href="https://doi.org/10.1016/j.joi.2020.101102">https://doi.org/10.1016/j.joi.2020.101102</a>.
+</div>
+<div id="ref-avila-robinson_conceptualization_2011" class="csl-entry" role="listitem">
+Avila-Robinson, A., and K. Miyazaki. 2011. <span>“Conceptualization and Operationalization of Emerging Technologies: <span>A</span> Complementing Approach.”</span> In <em>Technology <span>Management</span> in the <span>Energy</span> <span>Smart</span> <span>World</span> (<span>PICMET</span>), 2011 <span>Proceedings</span> of <span>PICMET</span> ’11:</em>, 1–12.
+</div>
+<div id="ref-ba_novel_2021" class="csl-entry" role="listitem">
+Ba, Zhichao, and Zhentao Liang. 2021. <span>“A Novel Approach to Measuring Science-Technology Linkage: <span>From</span> the Perspective of Knowledge Network Coupling.”</span> <em>Journal of Informetrics</em> 15 (3): 101167. <a href="https://doi.org/10.1016/j.joi.2021.101167">https://doi.org/10.1016/j.joi.2021.101167</a>.
+</div>
+<div id="ref-bornmann_which_2013" class="csl-entry" role="listitem">
+Bornmann, Lutz, Loet Leydesdorff, and Jian Wang. 2013. <span>“Which Percentile-Based Approach Should Be Preferred for Calculating Normalized Citation Impact Values? <span>An</span> Empirical Comparison of Five Approaches Including a Newly Developed Citation-Rank Approach (<span>P100</span>).”</span> <em>Journal of Informetrics</em> 7 (4): 933–44. <a href="https://doi.org/10.1016/j.joi.2013.09.003">https://doi.org/10.1016/j.joi.2013.09.003</a>.
+</div>
+<div id="ref-boyack_characterizing_2012" class="csl-entry" role="listitem">
+Boyack, K. W., R. Klavans, H. Small, and L. Ungar. 2012. <span>“Characterizing Emergence Using a Detailed Micro-Model of Science: <span>Investigating</span> Two Hot Topics in Nanotechnology.”</span> In <em>Technology <span>Management</span> for <span>Emerging</span> <span>Technologies</span> (<span>PICMET</span>), 2012 <span>Proceedings</span> of <span>PICMET</span> ’12:</em>, 2605–11.
+</div>
+<div id="ref-bryan_-text_2020" class="csl-entry" role="listitem">
+Bryan, Kevin A., Yasin Ozcan, and Bhaven Sampat. 2020. <span>“In-Text Patent Citations: <span>A</span> User’s Guide.”</span> <em>Research Policy</em> 49 (4): 103946. <a href="https://doi.org/10.1016/j.respol.2020.103946">https://doi.org/10.1016/j.respol.2020.103946</a>.
+</div>
+<div id="ref-cassi_how_2014" class="csl-entry" role="listitem">
+Cassi, Lorenzo, Wilfriedo Mescheba, and Élisabeth de Turckheim. 2014. <span>“How to Evaluate the Degree of Interdisciplinarity of an Institution?”</span> <em>Scientometrics</em> 101 (3): 1871–95. <a href="https://doi.org/10.1007/s11192-014-1280-0">https://doi.org/10.1007/s11192-014-1280-0</a>.
+</div>
+<div id="ref-chen_predictive_2012" class="csl-entry" role="listitem">
+Chen, Chaomei. 2012. <span>“Predictive Effects of Structural Variation on Citation Counts.”</span> <em>Journal of the American Society for Information Science and Technology</em> 63 (3): 431–49. <a href="https://doi.org/10.1002/asi.21694">https://doi.org/10.1002/asi.21694</a>.
+</div>
+<div id="ref-cozzens_emerging_2010" class="csl-entry" role="listitem">
+Cozzens, Susan, Sonia Gatchair, Jongseok Kang, Kyung-Sup Kim, Hyuck Jai Lee, Gonzalo Ordóñez, and Alan Porter. 2010. <span>“Emerging Technologies: Quantitative Identification and Measurement.”</span> <em>Technology Analysis &amp; Strategic Management</em> 22 (3): 361–76. <a href="https://doi.org/10.1080/09537321003647396">https://doi.org/10.1080/09537321003647396</a>.
+</div>
+<div id="ref-fleming_government-funded_2019" class="csl-entry" role="listitem">
+Fleming, L., H. Greene, G. Li, M. Marx, and D. Yao. 2019. <span>“Government-Funded Research Increasingly Fuels Innovation.”</span> <em>Science</em> 364 (6446): 1139–41. <a href="https://doi.org/10.1126/science.aaw2373">https://doi.org/10.1126/science.aaw2373</a>.
+</div>
+<div id="ref-goldman_conceptualizing_2014" class="csl-entry" role="listitem">
+Goldman, Alyssa W. 2014. <span>“Conceptualizing the Interdisciplinary Diffusion and Evolution of Emerging Fields: <span>The</span> Case of Systems Biology.”</span> <em>Journal of Informetrics</em> 8 (1): 43–58. <a href="https://doi.org/10.1016/j.joi.2013.10.009">https://doi.org/10.1016/j.joi.2013.10.009</a>.
+</div>
+<div id="ref-guo_mixed-indicators_2011" class="csl-entry" role="listitem">
+Guo, Hanning, Scott Weingart, and Katy Börner. 2011. <span>“Mixed-Indicators Model for Identifying Emerging Research Areas.”</span> <em>Scientometrics</em> 89 (1): 421–35. <a href="https://doi.org/10.1007/s11192-011-0433-7">https://doi.org/10.1007/s11192-011-0433-7</a>.
+</div>
+<div id="ref-hammarfelt_linking_2021" class="csl-entry" role="listitem">
+Hammarfelt, Björn. 2021. <span>“Linking Science to Technology: The <span>‘Patent Paper Citation’</span> and the Rise of Patentometrics in the 1980s.”</span> <em>Journal of Documentation</em> 77 (6): 1413–29. <a href="https://doi.org/10.1108/JD-12-2020-0218">https://doi.org/10.1108/JD-12-2020-0218</a>.
+</div>
+<div id="ref-hicks_leiden_2015" class="csl-entry" role="listitem">
+Hicks, Diana, Paul Wouters, Ludo Waltman, Sarah de Rijcke, and Ismael Rafols. 2015. <span>“The <span>Leiden</span> <span>Manifesto</span> for Research Metrics.”</span> <em>Nature News</em> 520 (7548): 429. <a href="https://doi.org/10.1038/520429a">https://doi.org/10.1038/520429a</a>.
+</div>
+<div id="ref-hsiao_technology_2020" class="csl-entry" role="listitem">
+Hsiao, Tzu-Kun, and Vetle I. Torvik. 2020. <span>“Technology Footprints in Scientific Discovery: <span>Citation</span> Contexts of Paper-to-Patent Citations.”</span> <em>Proceedings of the Association for Information Science and Technology</em> 57 (1): e337. <a href="https://doi.org/10.1002/pra2.337">https://doi.org/10.1002/pra2.337</a>.
+</div>
+<div id="ref-huang_how_2016" class="csl-entry" role="listitem">
+Huang, Ying, Yi Zhang, Jan Youtie, Alan L. Porter, and Xuefeng Wang. 2016. <span>“How <span>Does</span> <span>National</span> <span>Scientific</span> <span>Funding</span> <span>Support</span> <span>Emerging</span> <span>Interdisciplinary</span> <span>Research</span>: <span>A</span> <span>Comparison</span> <span>Study</span> of <span>Big</span> <span>Data</span> <span>Research</span> in the <span>US</span> and <span>China</span>.”</span> Edited by James Wilsdon. <em>PLOS ONE</em> 11 (5): e0154509. <a href="https://doi.org/10.1371/journal.pone.0154509">https://doi.org/10.1371/journal.pone.0154509</a>.
+</div>
+<div id="ref-jefferson_mapping_2018" class="csl-entry" role="listitem">
+Jefferson, Osmat A., Adam Jaffe, Doug Ashton, Ben Warren, Deniz Koellhofer, Uwe Dulleck, Aaron Ballagh, et al. 2018. <span>“Mapping the Global Influence of Published Research on Industry and Innovation.”</span> <em>Nature Biotechnology</em> 36 (1): 31–39. <a href="https://doi.org/10.1038/nbt.4049">https://doi.org/10.1038/nbt.4049</a>.
+</div>
+<div id="ref-knaus_parma_2018" class="csl-entry" role="listitem">
+Knaus, Johannes, and Margit Palzenberger. 2018. <span>“<span>PARMA</span>. <span>A</span> Full Text Search Based Method for Matching Non-Patent Literature Citations with Scientific Reference Databases. <span>A</span> Pilot Study.”</span> February. <a href="https://doi.org/10.17617/2.2540157">https://doi.org/10.17617/2.2540157</a>.
+</div>
+<div id="ref-kuan_overlooked_2020" class="csl-entry" role="listitem">
+Kuan, Chung-Huei, Dar-Zen Chen, and Mu-Hsuan Huang. 2020. <span>“The Overlooked Citations: <span>Investigating</span> the Impact of Ignoring Citations to Published Patent Applications.”</span> <em>Journal of Informetrics</em> 14 (1): 100997. <a href="https://doi.org/10.1016/j.joi.2019.100997">https://doi.org/10.1016/j.joi.2019.100997</a>.
+</div>
+<div id="ref-laudel_beyond_2014" class="csl-entry" role="listitem">
+Laudel, Grit, and Jochen Gläser. 2014. <span>“Beyond Breakthrough Research: <span>Epistemic</span> Properties of Research and Their Consequences for Research Funding.”</span> <em>Research Policy</em> 43 (7): 1204–16. <a href="https://doi.org/10.1016/j.respol.2014.02.006">https://doi.org/10.1016/j.respol.2014.02.006</a>.
+</div>
+<div id="ref-lee_deep_2021" class="csl-entry" role="listitem">
+Lee, June Young, Sejung Ahn, and Dohyun Kim. 2021. <span>“Deep Learning-Based Prediction of Future Growth Potential of Technologies.”</span> <em>PLOS ONE</em> 16 (6): e0252753. <a href="https://doi.org/10.1371/journal.pone.0252753">https://doi.org/10.1371/journal.pone.0252753</a>.
+</div>
+<div id="ref-leydesdorff_betweenness_2007" class="csl-entry" role="listitem">
+Leydesdorff, Loet. 2007. <span>“Betweenness Centrality as an Indicator of the Interdisciplinarity of Scientific Journals.”</span> <em>Journal of the American Society for Information Science and Technology</em> 58 (9): 1303–19. <a href="https://doi.org/10.1002/asi.20614">https://doi.org/10.1002/asi.20614</a>.
+</div>
+<div id="ref-leydesdorff_local_2011" class="csl-entry" role="listitem">
+Leydesdorff, Loet, and Ismael Rafols. 2011. <span>“Local Emergence and Global Diffusion of Research Technologies: <span>An</span> Exploration of Patterns of Network Formation.”</span> <em>Journal of the American Society for Information Science and Technology</em> 62 (5): 846–60. <a href="https://doi.org/10.1002/asi.21509">https://doi.org/10.1002/asi.21509</a>.
+</div>
+<div id="ref-leydesdorff_betweenness_2018" class="csl-entry" role="listitem">
+Leydesdorff, Loet, Caroline S. Wagner, and Lutz Bornmann. 2018. <span>“Betweenness and Diversity in Journal Citation Networks as Measures of Interdisciplinarity—<span>A</span> Tribute to <span>Eugene</span> <span>Garfield</span>.”</span> <em>Scientometrics</em> 114 (2): 567–92. <a href="https://doi.org/10.1007/s11192-017-2528-2">https://doi.org/10.1007/s11192-017-2528-2</a>.
+</div>
+<div id="ref-li_patent_2014" class="csl-entry" role="listitem">
+Li, Rui, Tamy Chambers, Ying Ding, Guo Zhang, and Liansheng Meng. 2014. <span>“Patent Citation Analysis: <span>Calculating</span> Science Linkage Based on Citing Motivation.”</span> <em>Journal of the Association for Information Science and Technology</em> 65 (5): 1007–17. <a href="https://doi.org/10.1002/asi.23054">https://doi.org/10.1002/asi.23054</a>.
+</div>
+<div id="ref-mane_mapping_2004" class="csl-entry" role="listitem">
+Mane, Ketan K., and Katy Börner. 2004. <span>“Mapping Topics and Topic Bursts in <span>PNAS</span>.”</span> <em>Proceedings of the National Academy of Sciences</em> 101 (suppl 1): 5287–90. <a href="https://doi.org/10.1073/pnas.0307626100">https://doi.org/10.1073/pnas.0307626100</a>.
+</div>
+<div id="ref-marx_reliance_2020" class="csl-entry" role="listitem">
+Marx, Matt, and Aaron Fuegi. 2020. <span>“Reliance on Science: <span>Worldwide</span> Front-Page Patent Citations to Scientific Articles.”</span> <em>Strategic Management Journal</em> 41 (9): 1572–94. <a href="https://doi.org/10.1002/smj.3145">https://doi.org/10.1002/smj.3145</a>.
+</div>
+<div id="ref-marx_reliance_2022" class="csl-entry" role="listitem">
+———. 2022. <span>“Reliance on Science by Inventors: <span>Hybrid</span> Extraction of in‐text Patent‐to‐article Citations.”</span> <em>Journal of Economics &amp; Management Strategy</em> 31 (2): 369–92. <a href="https://doi.org/10.1111/jems.12455">https://doi.org/10.1111/jems.12455</a>.
+</div>
+<div id="ref-mutz_diversity_2022" class="csl-entry" role="listitem">
+Mutz, Rüdiger. 2022. <span>“Diversity and Interdisciplinarity: <span>Should</span> Variety, Balance and Disparity Be Combined as a Product or Better as a Sum? <span>An</span> Information-Theoretical and Statistical Estimation Approach.”</span> <em>Scientometrics</em> 127 (12): 7397–7414. <a href="https://doi.org/10.1007/s11192-022-04336-3">https://doi.org/10.1007/s11192-022-04336-3</a>.
+</div>
+<div id="ref-park_technological_2018" class="csl-entry" role="listitem">
+Park, Inchae, and Byungun Yoon. 2018. <span>“Technological Opportunity Discovery for Technological Convergence Based on the Prediction of Technology Knowledge Flow in a Citation Network.”</span> <em>Journal of Informetrics</em> 12 (4): 1199–1222. <a href="https://doi.org/10.1016/j.joi.2018.09.007">https://doi.org/10.1016/j.joi.2018.09.007</a>.
+</div>
+<div id="ref-porter_tech_2005" class="csl-entry" role="listitem">
+Porter, Alan L., and Scott W. Cunningham. 2005. <em>Tech Mining: Exploiting New Technologies for Competitive Advantage</em>. Wiley Series in Systems Engineering and Management. Hoboken, N.J: Wiley.
+</div>
+<div id="ref-porter_emergence_2018" class="csl-entry" role="listitem">
+Porter, Alan L., Jon Garner, Stephen F. Carley, and Nils C. Newman. 2018. <span>“Emergence Scoring to Identify Frontier <span>R</span>&amp;<span>D</span> Topics and Key Players.”</span> <em>Technological Forecasting and Social Change</em>, April. <a href="https://doi.org/10.1016/j.techfore.2018.04.016">https://doi.org/10.1016/j.techfore.2018.04.016</a>.
+</div>
+<div id="ref-porter_is_2009" class="csl-entry" role="listitem">
+Porter, Alan L., and Ismael Rafols. 2009. <span>“Is Science Becoming More Interdisciplinary? <span>Measuring</span> and Mapping Six Research Fields over Time.”</span> <em>Scientometrics</em> 81 (3): 719–45. <a href="https://doi.org/10.1007/s11192-008-2197-2">https://doi.org/10.1007/s11192-008-2197-2</a>.
+</div>
+<div id="ref-van_raan_measuring_2019" class="csl-entry" role="listitem">
+Raan, Anthony van. 2019. <span>“Measuring <span>Science</span>: <span>Basic</span> <span>Principles</span> and <span>Application</span> of <span>Advanced</span> <span>Bibliometrics</span>.”</span> In <em>Springer <span>Handbook</span> of <span>Science</span> and <span>Technology</span> <span>Indicators</span></em>, edited by Wolfgang Glänzel, Henk F. Moed, Ulrich Schmoch, and Mike Thelwall, 237–80. Springer <span>Handbooks</span>. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-02511-3_10">https://doi.org/10.1007/978-3-030-02511-3_10</a>.
+</div>
+<div id="ref-ding_knowledge_2014" class="csl-entry" role="listitem">
+Rafols, Ismael. 2014. <span>“Knowledge <span>Integration</span> and <span>Diffusion</span>: <span>Measures</span> and <span>Mapping</span> of <span>Diversity</span> and <span>Coherence</span>.”</span> In <em>Measuring <span>Scholarly</span> <span>Impact</span></em>, edited by Ying Ding, Ronald Rousseau, and Dietmar Wolfram, 169–90. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-319-10377-8_8">https://doi.org/10.1007/978-3-319-10377-8_8</a>.
+</div>
+<div id="ref-rafols_how_2012" class="csl-entry" role="listitem">
+Rafols, Ismael, Loet Leydesdorff, Alice O’Hare, Paul Nightingale, and Andy Stirling. 2012. <span>“How Journal Rankings Can Suppress Interdisciplinary Research: <span>A</span> Comparison Between <span>Innovation</span> <span>Studies</span> and <span>Business</span> &amp; <span>Management</span>.”</span> <em>Research Policy</em> 41 (7): 1262–82. <a href="https://doi.org/10.1016/j.respol.2012.03.015">https://doi.org/10.1016/j.respol.2012.03.015</a>.
+</div>
+<div id="ref-rafols_diversity_2010" class="csl-entry" role="listitem">
+Rafols, Ismael, and Martin Meyer. 2010. <span>“Diversity and Network Coherence as Indicators of Interdisciplinarity: Case Studies in Bionanoscience.”</span> <em>Scientometrics</em> 82 (2): 263–87. <a href="https://doi.org/10.1007/s11192-009-0041-y">https://doi.org/10.1007/s11192-009-0041-y</a>.
+</div>
+<div id="ref-rosenbloom_effects_2015" class="csl-entry" role="listitem">
+Rosenbloom, Joshua L., Donna K. Ginther, Ted Juhl, and Joseph A. Heppert. 2015. <span>“The <span>Effects</span> of <span>Research</span> &amp; <span>Development</span> <span>Funding</span> on <span>Scientific</span> <span>Productivity</span>: <span>Academic</span> <span>Chemistry</span>, 1990-2009.”</span> <em>PLOS ONE</em> 10 (9): e0138176. <a href="https://doi.org/10.1371/journal.pone.0138176">https://doi.org/10.1371/journal.pone.0138176</a>.
+</div>
+<div id="ref-rotolo_what_2015" class="csl-entry" role="listitem">
+Rotolo, Daniele, Diana Hicks, and Ben R. Martin. 2015. <span>“What Is an Emerging Technology?”</span> <em>Research Policy</em> 44 (10): 1827–43. <a href="https://doi.org/10.1016/j.respol.2015.06.006">https://doi.org/10.1016/j.respol.2015.06.006</a>.
+</div>
+<div id="ref-glanzel_knowledge_2019" class="csl-entry" role="listitem">
+Rousseau, Ronald, Lin Zhang, and Xiaojun Hu. 2019. <span>“Knowledge <span>Integration</span>: <span>Its</span> <span>Meaning</span> and <span>Measurement</span>.”</span> In <em>Springer <span>Handbook</span> of <span>Science</span> and <span>Technology</span> <span>Indicators</span></em>, edited by Wolfgang Glänzel, Henk F. Moed, Ulrich Schmoch, and Mike Thelwall, 69–94. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-02511-3_3">https://doi.org/10.1007/978-3-030-02511-3_3</a>.
+</div>
+<div id="ref-shibata_detecting_2008" class="csl-entry" role="listitem">
+Shibata, Naoki, Yuya Kajikawa, Yoshiyuki Takeda, and Katsumori Matsushima. 2008. <span>“Detecting Emerging Research Fronts Based on Topological Measures in Citation Networks of Scientific Publications.”</span> <em>Technovation</em> 28 (11): 758–75. <a href="https://doi.org/10.1016/j.technovation.2008.03.009">https://doi.org/10.1016/j.technovation.2008.03.009</a>.
+</div>
+<div id="ref-thelwall_what_2023" class="csl-entry" role="listitem">
+Thelwall, Mike, Subreena Simrick, Ian Viney, and Peter Van den Besselaar. 2023. <span>“What Is Research Funding, How Does It Influence Research, and How Is It Recorded? <span>Key</span> Dimensions of Variation.”</span> <em>Scientometrics</em> 128 (11): 6085–6106. <a href="https://doi.org/10.1007/s11192-023-04836-w">https://doi.org/10.1007/s11192-023-04836-w</a>.
+</div>
+<div id="ref-traag_louvain_2019" class="csl-entry" role="listitem">
+Traag, V. A., L. Waltman, and N. J. van Eck. 2019. <span>“From <span>Louvain</span> to <span>Leiden</span>: Guaranteeing Well-Connected Communities.”</span> <em>Scientific Reports</em> 9 (1): 5233. <a href="https://doi.org/10.1038/s41598-019-41695-z">https://doi.org/10.1038/s41598-019-41695-z</a>.
+</div>
+<div id="ref-van_den_besselaar_interdisciplinary_2019" class="csl-entry" role="listitem">
+Van Den Besselaar, Peter. 2019. <span>“Interdisciplinary and Disciplinary Identities: Towards a Theory of Forms of Knowledge Change1.”</span> bioRxiv. <a href="https://doi.org/10.1101/603449">https://doi.org/10.1101/603449</a>.
+</div>
+<div id="ref-wagner_approaches_2011" class="csl-entry" role="listitem">
+Wagner, Caroline S., J. David Roessner, Kamau Bobb, Julie Thompson Klein, Kevin W. Boyack, Joann Keyton, Ismael Rafols, and Katy Börner. 2011. <span>“Approaches to Understanding and Measuring Interdisciplinary Scientific Research (<span>IDR</span>): <span>A</span> Review of the Literature.”</span> <em>Journal of Informetrics</em> 5 (1): 14–26. <a href="https://doi.org/10.1016/j.joi.2010.06.004">https://doi.org/10.1016/j.joi.2010.06.004</a>.
+</div>
+<div id="ref-waltman_review_2016" class="csl-entry" role="listitem">
+Waltman, Ludo. 2016. <span>“A Review of the Literature on Citation Impact Indicators.”</span> <em>Journal of Informetrics</em> 10 (2): 365–91. <a href="https://doi.org/10.1016/j.joi.2016.02.007">https://doi.org/10.1016/j.joi.2016.02.007</a>.
+</div>
+<div id="ref-waltman_principled_2020" class="csl-entry" role="listitem">
+Waltman, Ludo, Kevin W. Boyack, Giovanni Colavizza, and Nees Jan van Eck. 2020. <span>“A Principled Methodology for Comparing Relatedness Measures for Clustering Publications.”</span> <em>Quantitative Science Studies</em> 1 (2): 691–713. <a href="https://doi.org/10.1162/qss_a_00035">https://doi.org/10.1162/qss_a_00035</a>.
+</div>
+<div id="ref-waltman_calculation_2013" class="csl-entry" role="listitem">
+Waltman, Ludo, and Michael Schreiber. 2013. <span>“On the Calculation of Percentile-Based Bibliometric Indicators.”</span> <em>Journal of the American Society for Information Science and Technology</em> 64 (2): 372–79. <a href="https://doi.org/10.1002/asi.22775">https://doi.org/10.1002/asi.22775</a>.
+</div>
+<div id="ref-glanzel_field_2019" class="csl-entry" role="listitem">
+Waltman, Ludo, and Nees Jan Van Eck. 2019. <span>“Field <span>Normalization</span> of <span>Scientometric</span> <span>Indicators</span>.”</span> In <em>Springer <span>Handbook</span> of <span>Science</span> and <span>Technology</span> <span>Indicators</span></em>, edited by Wolfgang Glänzel, Henk F. Moed, Ulrich Schmoch, and Mike Thelwall, 281–300. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-02511-3_11">https://doi.org/10.1007/978-3-030-02511-3_11</a>.
+</div>
+<div id="ref-wang_is_2015" class="csl-entry" role="listitem">
+Wang, Jue, and Philip Shapira. 2015. <span>“Is <span>There</span> a <span>Relationship</span> Between <span>Research</span> <span>Sponsorship</span> and <span>Publication</span> <span>Impact</span>? <span>An</span> <span>Analysis</span> of <span>Funding</span> <span>Acknowledgments</span> in <span>Nanotechnology</span> <span>Papers</span>.”</span> Edited by K. Brad Wray. <em>PLOS ONE</em> 10 (2): e0117727. <a href="https://doi.org/10.1371/journal.pone.0117727">https://doi.org/10.1371/journal.pone.0117727</a>.
+</div>
+<div id="ref-wang_bibliometric_2018" class="csl-entry" role="listitem">
+Wang, Qi. 2018. <span>“A Bibliometric Model for Identifying Emerging Research Topics.”</span> <em>Journal of the Association for Information Science and Technology</em> 69 (2): 290–304. <a href="https://doi.org/10.1002/asi.23930">https://doi.org/10.1002/asi.23930</a>.
+</div>
+<div id="ref-wang_consistency_2019" class="csl-entry" role="listitem">
+Wang, Qi, and Jesper Wiborg Schneider. 2019. <span>“Consistency and Validity of Interdisciplinarity Measures.”</span> <em>Quantitative Science Studies</em>, October, 1–28. <a href="https://doi.org/10.1162/qss_a_00011">https://doi.org/10.1162/qss_a_00011</a>.
+</div>
+<div id="ref-wang_measuring_2017" class="csl-entry" role="listitem">
+Wang, Xuefeng, Zhinan Wang, Ying Huang, Yun Chen, Yi Zhang, Huichao Ren, Rongrong Li, and Jinhui Pang. 2017. <span>“Measuring Interdisciplinarity of a Research System: Detecting Distinction Between Publication Categories and Citation Categories.”</span> <em>Scientometrics</em> 111 (3): 2023–39. <a href="https://doi.org/10.1007/s11192-017-2348-4">https://doi.org/10.1007/s11192-017-2348-4</a>.
+</div>
+<div id="ref-yin_does_2018" class="csl-entry" role="listitem">
+Yin, Zhifeng, Zheng Liang, and Qiang Zhi. 2018. <span>“Does the Concentration of Scientific Research Funding in Institutions Promote Knowledge Output?”</span> <em>Journal of Informetrics</em> 12 (4): 1146–59. <a href="https://doi.org/10.1016/j.joi.2018.09.003">https://doi.org/10.1016/j.joi.2018.09.003</a>.
+</div>
+<div id="ref-zamani_developing_2022" class="csl-entry" role="listitem">
+Zamani, Mehdi, Haydar Yalcin, Ali Bonyadi Naeini, Gordana Zeba, and Tugrul U Daim. 2022. <span>“Developing Metrics for Emerging Technologies: Identification and Assessment.”</span> <em>Technological Forecasting and Social Change</em> 176 (March): 121456. <a href="https://doi.org/10.1016/j.techfore.2021.121456">https://doi.org/10.1016/j.techfore.2021.121456</a>.
+</div>
+<div id="ref-zhang_diversity_2016" class="csl-entry" role="listitem">
+Zhang, Lin, Ronald Rousseau, and Wolfgang Glänzel. 2016. <span>“Diversity of References as an Indicator of the Interdisciplinarity of Journals: <span>Taking</span> Similarity Between Subject Fields into Account.”</span> <em>Journal of the Association for Information Science and Technology</em> 67 (5): 1257–65. <a href="https://doi.org/10.1002/asi.23487">https://doi.org/10.1002/asi.23487</a>.
+</div>
+<div id="ref-zwanenburg_toward_2022" class="csl-entry" role="listitem">
+Zwanenburg, Sander, Maryam Nakhoda, and Peter Whigham. 2022. <span>“Toward Greater Consistency and Validity in Measuring Interdisciplinarity: A Systematic and Conceptual Evaluation.”</span> <em>Scientometrics</em> 127 (12): 7769–88. <a href="https://doi.org/10.1007/s11192-022-04310-z">https://doi.org/10.1007/s11192-022-04310-z</a>.
+</div>
+<div id="ref-dongascience_2024" class="csl-entry" role="listitem">
+과학동아. 2024. <span>“전 세계 논문으로 분석한 5년 후 뜰 과학 (5년후 과학은 연재 모음).”</span> <a href="https://dl.dongascience.com/dl/ebook/detail/128">https://dl.dongascience.com/dl/ebook/detail/128</a>.
+</div>
+<div id="ref-convergence_4th_plan" class="csl-entry" role="listitem">
+국가과학기술자문회의. 2023. <span>“제 4차 융합연구개발 활성화 기본계획(안).”</span> <a href="https://www.pacst.go.kr/jsp/council/councilArchiveView.jsp?archive_id=1123&amp;cpage=3">https://www.pacst.go.kr/jsp/council/councilArchiveView.jsp?archive_id=1123&amp;cpage=3</a>.
+</div>
+<div id="ref-polar_2021" class="csl-entry" role="listitem">
+극지연구소, and KISTI. 2021. <span>“2021 극지연구 성과 분석 및 미래 극지연구도출.”</span> 극지연구소.
+</div>
+<div id="ref-kisti_future_2024" class="csl-entry" role="listitem">
+김소영, 황지나, 김혜원, 이주현, and 홍성화. 2024. <span>“KISTI DATA INSIGHT 제33호 : 특이점(singularity) 시대, 확장과 가속 그리고 균형의 미래기술.”</span> Data Insight 33. KISTI 미래기술분석센터. <a href="https://kisti.re.kr/post/data-insight">https://kisti.re.kr/post/data-insight</a>.
+</div>
+<div id="ref-kisti_deep_2020" class="csl-entry" role="listitem">
+미래기술분석센터KISTI. 2020. <span>“딥러닝으로 예측한 미래 고성장 과학기술영역 100선 - 지구를 이해하는 산업혁명.”</span> Data Insight 14. KISTI 미래기술분석센터. <a href="https://kisti.re.kr/post/data-insight">https://kisti.re.kr/post/data-insight</a>.
+</div>
+<div id="ref-kist_2013" class="csl-entry" role="listitem">
+미래융합전략센터. 2013. <span>“4PN 분석방법론.”</span> <a href="https://kist.re.kr/fcsc/publication/other-policy.do?mode=view&amp;articleNo=11447&amp;article.offset=0&amp;articleLimit=10">https://kist.re.kr/fcsc/publication/other-policy.do?mode=view&amp;articleNo=11447&amp;article.offset=0&amp;articleLimit=10</a>.
+</div>
+<div id="ref-kisti_excel_2019" class="csl-entry" role="listitem">
+이준영·박진서. 2019. <span>“학술논문 데이터로 바라 본 글로벌 과학기술연구 수준의 거시적 변동.”</span> Data Insight 7. KISTI 미래기술분석센터. <a href="https://kisti.re.kr/post/data-insight">https://kisti.re.kr/post/data-insight</a>.
+</div>
+<div id="ref-hankookilbo_2024" class="csl-entry" role="listitem">
+한국일보. 2024. <span>“창간기획: 초인류테크, 삶을 바꾼다.”</span> <a href="https://www.hankookilbo.com/70special">https://www.hankookilbo.com/70special</a>.
+</div>
+</div>
+</section>
+</section>
+</section>
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./macro_3_meso_42.html" class="pagination-link" aria-label="[세부영역 42] AI기반 영상 분석 및 진단">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">47</span>&nbsp; <span class="chapter-title">[세부영역 42] AI기반 영상 분석 및 진단</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./pick_recluster.html" class="pagination-link" aria-label="[부록 2] 선별 아이템의 유형화">
+        <span class="nav-page-text"><span class="chapter-number">49</span>&nbsp; <span class="chapter-title">[부록 2] 선별 아이템의 유형화</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"openEffect":"zoom","selector":".lightbox","descPosition":"bottom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
